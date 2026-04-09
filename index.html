@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arjun Kumar | AI-Powered Full Stack Architect</title>
+  <meta name="description" content="I build scalable, AI-powered business systems. Expert in MEAN, MERN, AI Integration, and Cloud Architecture. Transform your ideas into production-ready platforms.">
+  <meta name="keywords" content="Full Stack Developer, AI Architect, MEAN Stack, MERN Stack, SaaS Development, Healthcare Tech, Cloud Architecture">
+  <meta name="author" content="Arjun Kumar">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arjun Kumar | AI-Powered Full Stack Architect">
+  <meta property="og:description" content="I build scalable, AI-powered business systems. Expert in MEAN, MERN, AI Integration, and Cloud Architecture.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arjunkumar.dev">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arjun Kumar",
+    "jobTitle": "AI-Powered Full Stack Architect",
+    "description": "Product Architect specializing in scalable AI-powered business systems",
+    "knowsAbout": ["MEAN Stack", "MERN Stack", "AI Integration", "Cloud Architecture", "SaaS Development", "Healthcare Technology"],
+    "url": "https://arjunkumar.dev"
+  }
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+            heading: ['Space Grotesk', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0e7fe',
+              100: '#d9c5fd',
+              200: '#b68dfa',
+              300: '#9355f7',
+              400: '#7c2df5',
+              500: '#6d28d9',
+              600: '#5b21b6',
+              700: '#4c1d95',
+              800: '#3b1578',
+              900: '#2e1065',
+            },
+            surface: {
+              50: '#f8fafc',
+              100: '#f1f5f9',
+              800: '#1e1b2e',
+              850: '#181526',
+              900: '#0f0d1a',
+              950: '#0a0814',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-surface-950 text-white font-sans antialiased">
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center font-bold text-lg transition-transform group-hover:scale-110">
+            A
+          </div>
+          <span class="text-xl font-bold hidden sm:block">
+            <span class="text-white">arjun</span><span class="text-brand-400">.dev</span>
+          </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-1">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#usecases" class="nav-link">Use Cases</a>
+          <a href="#tech" class="nav-link">Tech Stack</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- CTA + Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/919999999999?text=Hi%20Arjun%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-brand-500 hover:bg-brand-600 rounded-xl text-sm font-semibold transition-all hover:shadow-lg hover:shadow-brand-500/25">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            Let's Talk
+          </a>
+          <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Toggle menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-surface-900/98 backdrop-blur-xl border-t border-white/5">
+      <div class="px-4 py-6 space-y-1">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+        <a href="#usecases" class="mobile-nav-link">Use Cases</a>
+        <a href="#tech" class="mobile-nav-link">Tech Stack</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <div class="pt-4">
+          <a href="https://wa.me/919999999999?text=Hi%20Arjun%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 w-full px-5 py-3 bg-brand-500 hover:bg-brand-600 rounded-xl text-sm font-semibold transition-all">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            Let's Talk on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <!-- Background Effects -->
+    <div class="absolute inset-0">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/8 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
+      <div class="hero-grid absolute inset-0 opacity-[0.03]"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+        <!-- LEFT: Text Content -->
+        <div>
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-medium mb-6 animate-fade-in">
+            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            Available for projects
+          </div>
+
+          <!-- Headline -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] mb-5 animate-fade-in-up">
+            I don't build features.
+            <br>
+            <span class="text-gradient">I build AI systems.</span>
+          </h1>
+
+          <!-- Subtext -->
+          <p class="text-base sm:text-lg text-gray-400 max-w-xl mb-8 leading-relaxed animate-fade-in-up delay-200">
+            Transforming legacy businesses into <strong class="text-white">AI-powered platforms</strong> &mdash;
+            faster, cheaper, and smarter. From <strong class="text-white">custom AI agents</strong> to
+            <strong class="text-white">full system automation</strong>.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 mb-10 animate-fade-in-up delay-400">
+            <a href="https://wa.me/919999999999?text=Hi%20Arjun%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-500 hover:bg-brand-600 rounded-2xl text-sm font-bold transition-all hover:shadow-xl hover:shadow-brand-500/30 hover:-translate-y-0.5">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              Start Your Project
+            </a>
+            <a href="#usecases" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl text-sm font-bold transition-all hover:-translate-y-0.5">
+              <i data-lucide="zap" class="w-5 h-5"></i>
+              See AI in Action
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-4 gap-4 animate-fade-in-up delay-600">
+            <div class="stat-card">
+              <div class="text-2xl font-black text-white">7+</div>
+              <div class="text-xs text-gray-500">Years Exp</div>
+            </div>
+            <div class="stat-card">
+              <div class="text-2xl font-black text-white">50+</div>
+              <div class="text-xs text-gray-500">Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="text-2xl font-black text-white">15+</div>
+              <div class="text-xs text-gray-500">AI Agents</div>
+            </div>
+            <div class="stat-card">
+              <div class="text-2xl font-black text-white">10x</div>
+              <div class="text-xs text-gray-500">Faster</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Animated Terminal -->
+        <div class="animate-fade-in-up delay-400">
+          <div class="hero-terminal">
+            <!-- Terminal Chrome -->
+            <div class="terminal-header">
+              <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-red-400/80"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-400/80"></div>
+                <div class="w-3 h-3 rounded-full bg-green-400/80"></div>
+              </div>
+              <div class="terminal-tab active" id="terminal-tab-label">
+                <i data-lucide="terminal" class="w-3.5 h-3.5"></i>
+                <span>ai-agent.ts</span>
+              </div>
+              <div class="flex items-center gap-2 text-gray-500">
+                <span class="text-xs font-mono" id="terminal-status">RUNNING</span>
+                <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+              </div>
+            </div>
+
+            <!-- Terminal Body -->
+            <div class="terminal-body" id="terminal-body">
+              <!-- Content dynamically rendered by JS -->
+            </div>
+
+            <!-- Terminal Footer -->
+            <div class="terminal-footer">
+              <div class="flex items-center gap-4 text-xs text-gray-500">
+                <span class="flex items-center gap-1">
+                  <i data-lucide="cpu" class="w-3 h-3 text-brand-400"></i>
+                  <span id="terminal-agent-label">AI Agent Active</span>
+                </span>
+                <span class="flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3 h-3 text-green-400"></i>
+                  Secure
+                </span>
+                <span class="flex items-center gap-1">
+                  <i data-lucide="zap" class="w-3 h-3 text-yellow-400"></i>
+                  <span id="terminal-speed">42ms</span>
+                </span>
+              </div>
+              <div class="flex items-center gap-1">
+                <div class="terminal-scene-dot active" data-scene="0"></div>
+                <div class="terminal-scene-dot" data-scene="1"></div>
+                <div class="terminal-scene-dot" data-scene="2"></div>
+                <div class="terminal-scene-dot" data-scene="3"></div>
+                <div class="terminal-scene-dot" data-scene="4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <i data-lucide="chevron-down" class="w-6 h-6 text-gray-500"></i>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section id="about" class="py-24 md:py-32 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <!-- Left: AI Funnel Builder Visual -->
+        <div class="reveal-section">
+          <div class="funnel-builder">
+            <!-- Builder Header -->
+            <div class="funnel-header">
+              <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-red-400/80"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-400/80"></div>
+                <div class="w-3 h-3 rounded-full bg-green-400/80"></div>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-400 font-mono">
+                <i data-lucide="workflow" class="w-3.5 h-3.5 text-brand-400"></i>
+                AI Sales Funnel Builder
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/15 text-green-400">NO-CODE</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-brand-500/15 text-brand-300">LIVE</span>
+              </div>
+            </div>
+
+            <!-- Builder Canvas -->
+            <div class="funnel-canvas" id="funnel-canvas">
+
+              <!-- AI Tools Sidebar -->
+              <div class="funnel-sidebar">
+                <div class="text-[9px] uppercase tracking-wider text-gray-500 font-bold mb-2 px-1">AI Agents</div>
+                <div class="funnel-tool" data-tool="chatgpt">
+                  <img src="https://cdn.simpleicons.org/openai/10a37f" alt="OpenAI" class="w-4 h-4">
+                  <span>GPT-4</span>
+                </div>
+                <div class="funnel-tool" data-tool="claude">
+                  <img src="https://cdn.simpleicons.org/anthropic/d4a27f" alt="Claude" class="w-4 h-4">
+                  <span>Claude</span>
+                </div>
+                <div class="funnel-tool" data-tool="gemini">
+                  <img src="https://cdn.simpleicons.org/google/4285f4" alt="Gemini" class="w-4 h-4">
+                  <span>Gemini</span>
+                </div>
+                <div class="text-[9px] uppercase tracking-wider text-gray-500 font-bold mt-3 mb-2 px-1">Automations</div>
+                <div class="funnel-tool" data-tool="zapier">
+                  <img src="https://cdn.simpleicons.org/zapier/ff4a00" alt="Zapier" class="w-4 h-4">
+                  <span>Zapier</span>
+                </div>
+                <div class="funnel-tool" data-tool="make">
+                  <img src="https://cdn.simpleicons.org/make/6d00cc" alt="Make" class="w-4 h-4">
+                  <span>Make</span>
+                </div>
+                <div class="text-[9px] uppercase tracking-wider text-gray-500 font-bold mt-3 mb-2 px-1">Channels</div>
+                <div class="funnel-tool" data-tool="whatsapp">
+                  <img src="https://cdn.simpleicons.org/whatsapp/25d366" alt="WhatsApp" class="w-4 h-4">
+                  <span>WhatsApp</span>
+                </div>
+                <div class="funnel-tool" data-tool="stripe">
+                  <img src="https://cdn.simpleicons.org/stripe/635bff" alt="Stripe" class="w-4 h-4">
+                  <span>Stripe</span>
+                </div>
+              </div>
+
+              <!-- Funnel Flow -->
+              <div class="funnel-flow">
+                <!-- Step 1: Lead Capture -->
+                <div class="funnel-node node-animate" style="animation-delay: 0.2s">
+                  <div class="node-icon bg-blue-500/15">
+                    <i data-lucide="globe" class="w-4 h-4 text-blue-400"></i>
+                  </div>
+                  <div class="node-content">
+                    <div class="node-title">Landing Page</div>
+                    <div class="node-desc">AI-optimized copy</div>
+                  </div>
+                  <div class="node-badge badge-active">Live</div>
+                </div>
+
+                <div class="funnel-connector">
+                  <div class="connector-line"></div>
+                  <div class="connector-label">lead captured</div>
+                </div>
+
+                <!-- Step 2: AI Qualifier -->
+                <div class="funnel-node node-animate" style="animation-delay: 0.6s">
+                  <div class="node-icon bg-purple-500/15">
+                    <img src="https://cdn.simpleicons.org/openai/10a37f" alt="GPT" class="w-4 h-4">
+                  </div>
+                  <div class="node-content">
+                    <div class="node-title">AI Lead Scorer</div>
+                    <div class="node-desc">GPT-4 qualifies leads</div>
+                  </div>
+                  <div class="node-status">
+                    <span class="text-green-400 text-[10px]">97% accuracy</span>
+                  </div>
+                </div>
+
+                <div class="funnel-connector">
+                  <div class="connector-line"></div>
+                  <div class="connector-branch">
+                    <span class="branch-hot">Hot</span>
+                    <span class="branch-warm">Warm</span>
+                  </div>
+                </div>
+
+                <!-- Step 3: Engagement -->
+                <div class="funnel-node node-animate" style="animation-delay: 1.0s">
+                  <div class="node-icon bg-green-500/15">
+                    <img src="https://cdn.simpleicons.org/whatsapp/25d366" alt="WhatsApp" class="w-4 h-4">
+                  </div>
+                  <div class="node-content">
+                    <div class="node-title">Auto-Engage</div>
+                    <div class="node-desc">WhatsApp + Email drip</div>
+                  </div>
+                  <div class="node-stats">
+                    <div class="stat-mini"><span class="text-green-400">82%</span> open</div>
+                    <div class="stat-mini"><span class="text-blue-400">34%</span> reply</div>
+                  </div>
+                </div>
+
+                <div class="funnel-connector">
+                  <div class="connector-line"></div>
+                  <div class="connector-label">books call</div>
+                </div>
+
+                <!-- Step 4: Meeting -->
+                <div class="funnel-node node-animate" style="animation-delay: 1.4s">
+                  <div class="node-icon bg-orange-500/15">
+                    <img src="https://cdn.simpleicons.org/anthropic/d4a27f" alt="Claude" class="w-4 h-4">
+                  </div>
+                  <div class="node-content">
+                    <div class="node-title">AI Prep Brief</div>
+                    <div class="node-desc">Claude builds prospect dossier</div>
+                  </div>
+                  <div class="node-badge badge-ai">AI</div>
+                </div>
+
+                <div class="funnel-connector">
+                  <div class="connector-line"></div>
+                  <div class="connector-label">closes deal</div>
+                </div>
+
+                <!-- Step 5: Payment -->
+                <div class="funnel-node node-animate" style="animation-delay: 1.8s">
+                  <div class="node-icon bg-indigo-500/15">
+                    <img src="https://cdn.simpleicons.org/stripe/635bff" alt="Stripe" class="w-4 h-4">
+                  </div>
+                  <div class="node-content">
+                    <div class="node-title">Auto Invoice</div>
+                    <div class="node-desc">Stripe + contract signed</div>
+                  </div>
+                  <div class="node-badge badge-active">$$$</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Builder Footer -->
+            <div class="funnel-footer">
+              <div class="flex items-center gap-3 text-[10px] text-gray-500">
+                <span class="flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+                  5 nodes active
+                </span>
+                <span>|</span>
+                <span>3 AI agents connected</span>
+                <span>|</span>
+                <span class="text-green-400 font-semibold">Funnel converting at 12%</span>
+              </div>
+              <div class="text-[10px] text-gray-600">Drag tools to canvas</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="reveal-section">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-500/10 text-brand-300 text-sm font-medium mb-4">
+            <i data-lucide="user" class="w-4 h-4"></i>
+            About Me
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+            From <span class="text-gradient">UX Design</span> to
+            <span class="text-gradient">AI Architecture</span>
+          </h2>
+          <div class="space-y-4 text-gray-400 leading-relaxed">
+            <p>
+              I started my journey in UI/UX design, understanding how users think. Then I went deep into full-stack development with the MEAN and MERN stacks, building production systems that serve thousands of users daily.
+            </p>
+            <p>
+              Today, I architect <strong class="text-white">AI-powered business platforms</strong> that combine clean engineering with intelligent automation. From healthcare systems processing patient data to legal platforms managing compliance workflows &mdash; I build systems that solve real business problems.
+            </p>
+            <p>
+              My approach: <strong class="text-white">understand the business first, then engineer the solution</strong>. Every line of code should serve a purpose.
+            </p>
+          </div>
+
+          <!-- Journey Timeline -->
+          <div class="mt-10 space-y-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center shrink-0">
+                <i data-lucide="palette" class="w-5 h-5 text-pink-400"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-white">UI/UX Designer</div>
+                <div class="text-sm text-gray-500">Understanding users & crafting experiences</div>
+              </div>
+            </div>
+            <div class="w-px h-6 bg-white/10 ml-6"></div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0">
+                <i data-lucide="code-2" class="w-5 h-5 text-blue-400"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-white">Full Stack Developer</div>
+                <div class="text-sm text-gray-500">MEAN & MERN stack mastery</div>
+              </div>
+            </div>
+            <div class="w-px h-6 bg-white/10 ml-6"></div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brand-500/10 flex items-center justify-center shrink-0">
+                <i data-lucide="cpu" class="w-5 h-5 text-brand-400"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-white">AI Product Architect</div>
+                <div class="text-sm text-gray-500">Building intelligent business systems</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <section id="services" class="py-24 md:py-32 relative bg-surface-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-section">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-500/10 text-brand-300 text-sm font-medium mb-4">
+          <i data-lucide="layers" class="w-4 h-4"></i>
+          Services
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          What I <span class="text-gradient">Build</span>
+        </h2>
+        <p class="text-gray-400">End-to-end solutions from concept to deployment. Every project is architected for scale, performance, and business impact.</p>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="service-card reveal-section">
+          <div class="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6">
+            <i data-lucide="monitor-smartphone" class="w-7 h-7 text-blue-400"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">SaaS Development</h3>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">Full-stack SaaS platforms with MEAN/MERN stack. Multi-tenant architectures, subscription billing, admin dashboards.</p>
+          <div class="mt-auto">
+            <div class="text-xs text-gray-500 mb-2">Starting from</div>
+            <div class="text-2xl font-bold text-white">$3,000</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card reveal-section">
+          <div class="w-14 h-14 rounded-2xl bg-brand-500/10 flex items-center justify-center mb-6">
+            <i data-lucide="bot" class="w-7 h-7 text-brand-400"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">AI Agent Integration</h3>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">Custom AI agents, chatbots, and intelligent automation. GPT integration, prompt engineering, RAG pipelines.</p>
+          <div class="mt-auto">
+            <div class="text-xs text-gray-500 mb-2">Starting from</div>
+            <div class="text-2xl font-bold text-white">$2,000</div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card reveal-section">
+          <div class="w-14 h-14 rounded-2xl bg-green-500/10 flex items-center justify-center mb-6">
+            <i data-lucide="cloud" class="w-7 h-7 text-green-400"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Cloud & DevOps</h3>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">AWS, Vercel, Supabase deployment. CI/CD pipelines, containerization, monitoring, and auto-scaling infrastructure.</p>
+          <div class="mt-auto">
+            <div class="text-xs text-gray-500 mb-2">Starting from</div>
+            <div class="text-2xl font-bold text-white">$1,500</div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card reveal-section">
+          <div class="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mb-6">
+            <i data-lucide="heart-pulse" class="w-7 h-7 text-orange-400"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Industry Solutions</h3>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">Specialized platforms for Healthcare (HIPAA), Legal (compliance), and Enterprise. Domain expertise built-in.</p>
+          <div class="mt-auto">
+            <div class="text-xs text-gray-500 mb-2">Starting from</div>
+            <div class="text-2xl font-bold text-white">$5,000</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mt-12 reveal-section">
+        <a href="https://wa.me/919999999999?text=Hi%20Arjun%2C%20I%27m%20interested%20in%20your%20services" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 bg-brand-500 hover:bg-brand-600 rounded-2xl font-bold transition-all hover:shadow-xl hover:shadow-brand-500/30 hover:-translate-y-0.5">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          Discuss Your Project
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PORTFOLIO ═══════════════ -->
+  <section id="portfolio" class="py-24 md:py-32 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-section">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-500/10 text-brand-300 text-sm font-medium mb-4">
+          <i data-lucide="briefcase" class="w-4 h-4"></i>
+          Portfolio
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          Case <span class="text-gradient">Studies</span>
+        </h2>
+        <p class="text-gray-400">Real projects, real impact. Here's how I've helped businesses scale with technology.</p>
+      </div>
+
+      <!-- Project Cards -->
+      <div class="space-y-8">
+
+        <!-- Project 1: DOCTY -->
+        <div class="project-card reveal-section">
+          <div class="grid md:grid-cols-5 gap-8">
+            <!-- Preview -->
+            <div class="md:col-span-2">
+              <div class="aspect-video rounded-2xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center">
+                <div class="text-center">
+                  <div class="text-4xl font-black text-blue-400 mb-2">DOCTY</div>
+                  <div class="text-sm text-gray-400">Telehealth Platform</div>
+                </div>
+              </div>
+            </div>
+            <!-- Details -->
+            <div class="md:col-span-3">
+              <div class="flex flex-wrap items-center gap-3 mb-4">
+                <span class="px-3 py-1 rounded-lg bg-blue-500/10 text-blue-300 text-xs font-medium">Healthcare</span>
+                <span class="px-3 py-1 rounded-lg bg-green-500/10 text-green-300 text-xs font-medium">SaaS</span>
+                <span class="px-3 py-1 rounded-lg bg-brand-500/10 text-brand-300 text-xs font-medium">AI-Powered</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">DOCTY &mdash; AI-Powered Telehealth Platform</h3>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Problem</div>
+                  <p class="text-gray-400">Healthcare providers needed a unified platform for video consultations, patient management, and AI-assisted diagnosis across multiple countries.</p>
+                </div>
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Solution</div>
+                  <p class="text-gray-400">Built a scalable telehealth ecosystem with real-time video calls, AI symptom checker, multi-language support, and EHR integration serving 10,000+ patients.</p>
+                </div>
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Tech Stack</div>
+                  <div class="flex flex-wrap gap-2 mt-1">
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">WebRTC</span>
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">OpenAI</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Impact</div>
+                  <div class="flex flex-wrap gap-6 mt-1">
+                    <div><span class="text-2xl font-bold text-white">10K+</span> <span class="text-gray-500 text-xs">Patients Served</span></div>
+                    <div><span class="text-2xl font-bold text-white">40%</span> <span class="text-gray-500 text-xs">Reduced Wait Time</span></div>
+                    <div><span class="text-2xl font-bold text-white">5</span> <span class="text-gray-500 text-xs">Countries</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: QuickCare Life -->
+        <div class="project-card reveal-section">
+          <div class="grid md:grid-cols-5 gap-8">
+            <div class="md:col-span-2">
+              <div class="aspect-video rounded-2xl bg-gradient-to-br from-green-500/20 to-emerald-500/20 flex items-center justify-center">
+                <div class="text-center">
+                  <div class="text-3xl font-black text-green-400 mb-2">QuickCare</div>
+                  <div class="text-sm text-gray-400">Health Insurance Platform</div>
+                </div>
+              </div>
+            </div>
+            <div class="md:col-span-3">
+              <div class="flex flex-wrap items-center gap-3 mb-4">
+                <span class="px-3 py-1 rounded-lg bg-green-500/10 text-green-300 text-xs font-medium">InsurTech</span>
+                <span class="px-3 py-1 rounded-lg bg-blue-500/10 text-blue-300 text-xs font-medium">Enterprise</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">QuickCare Life &mdash; Health Insurance Management</h3>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Problem</div>
+                  <p class="text-gray-400">Insurance companies struggled with manual claims processing, policy management, and customer onboarding leading to high operational costs.</p>
+                </div>
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Solution</div>
+                  <p class="text-gray-400">Developed an end-to-end insurance platform with automated claims processing, digital policy management, and real-time analytics dashboard.</p>
+                </div>
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Tech Stack</div>
+                  <div class="flex flex-wrap gap-2 mt-1">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Docker</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Impact</div>
+                  <div class="flex flex-wrap gap-6 mt-1">
+                    <div><span class="text-2xl font-bold text-white">60%</span> <span class="text-gray-500 text-xs">Faster Claims</span></div>
+                    <div><span class="text-2xl font-bold text-white">25K+</span> <span class="text-gray-500 text-xs">Policies Managed</span></div>
+                    <div><span class="text-2xl font-bold text-white">$2M</span> <span class="text-gray-500 text-xs">Cost Savings</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Ekincare -->
+        <div class="project-card reveal-section">
+          <div class="grid md:grid-cols-5 gap-8">
+            <div class="md:col-span-2">
+              <div class="aspect-video rounded-2xl bg-gradient-to-br from-brand-500/20 to-pink-500/20 flex items-center justify-center">
+                <div class="text-center">
+                  <div class="text-3xl font-black text-brand-400 mb-2">ekincare</div>
+                  <div class="text-sm text-gray-400">Corporate Wellness Platform</div>
+                </div>
+              </div>
+            </div>
+            <div class="md:col-span-3">
+              <div class="flex flex-wrap items-center gap-3 mb-4">
+                <span class="px-3 py-1 rounded-lg bg-brand-500/10 text-brand-300 text-xs font-medium">HealthTech</span>
+                <span class="px-3 py-1 rounded-lg bg-orange-500/10 text-orange-300 text-xs font-medium">B2B</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Ekincare &mdash; Corporate Wellness & Benefits</h3>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Problem</div>
+                  <p class="text-gray-400">Enterprises needed a unified platform to manage employee wellness programs, health checkups, and insurance benefits across multiple locations.</p>
+                </div>
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Solution</div>
+                  <p class="text-gray-400">Built a comprehensive wellness platform integrating health risk assessments, doctor consultations, fitness tracking, and benefits administration.</p>
+                </div>
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Tech Stack</div>
+                  <div class="flex flex-wrap gap-2 mt-1">
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">AWS Lambda</span>
+                    <span class="tech-tag">Python</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-gray-500 font-medium mb-1">Impact</div>
+                  <div class="flex flex-wrap gap-6 mt-1">
+                    <div><span class="text-2xl font-bold text-white">500+</span> <span class="text-gray-500 text-xs">Corporates</span></div>
+                    <div><span class="text-2xl font-bold text-white">1M+</span> <span class="text-gray-500 text-xs">Employees</span></div>
+                    <div><span class="text-2xl font-bold text-white">35%</span> <span class="text-gray-500 text-xs">Better Engagement</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ USE CASES ═══════════════ -->
+  <section id="usecases" class="py-24 md:py-32 relative bg-surface-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto mb-6 reveal-section">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-500/10 text-brand-300 text-sm font-medium mb-4">
+          <i data-lucide="zap" class="w-4 h-4"></i>
+          Industry Transformation
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          The Future is <span class="text-gradient">AI-First</span>
+        </h2>
+        <p class="text-gray-400 mb-3">Legacy systems are costing businesses millions in lost productivity, manual errors, and slow delivery. The IT industry has fundamentally changed &mdash; and businesses that don't adapt will be left behind.</p>
+        <p class="text-lg text-white font-semibold">I'm here to transform your legacy apps into <span class="text-gradient">AI-powered systems</span>.</p>
+      </div>
+
+      <!-- Sector subtitle -->
+      <div class="text-center mb-12 reveal-section">
+        <p class="text-sm text-gray-500 uppercase tracking-widest">Click any sector to see the transformation</p>
+      </div>
+
+      <!-- Sector Cards Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Healthcare -->
+        <div class="usecase-card reveal-section" onclick="openUseCaseModal('healthcare')">
+          <div class="w-14 h-14 rounded-2xl bg-red-500/10 flex items-center justify-center mb-5">
+            <i data-lucide="heart-pulse" class="w-7 h-7 text-red-400"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Healthcare & Telemedicine</h3>
+          <p class="text-gray-400 text-sm mb-5 leading-relaxed">From paper-based records and 6-month dev cycles to AI-powered diagnostics deployed in weeks.</p>
+          <div class="flex items-center gap-2 text-brand-300 text-sm font-semibold group-hover:gap-3 transition-all">
+            <span>See Transformation</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- FinTech -->
+        <div class="usecase-card reveal-section" onclick="openUseCaseModal('fintech')">
+          <div class="w-14 h-14 rounded-2xl bg-green-500/10 flex items-center justify-center mb-5">
+            <i data-lucide="landmark" class="w-7 h-7 text-green-400"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">FinTech & Banking</h3>
+          <p class="text-gray-400 text-sm mb-5 leading-relaxed">Replace legacy COBOL systems and manual compliance with real-time AI fraud detection and automation.</p>
+          <div class="flex items-center gap-2 text-brand-300 text-sm font-semibold">
+            <span>See Transformation</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Legal -->
+        <div class="usecase-card reveal-section" onclick="openUseCaseModal('legal')">
+          <div class="w-14 h-14 rounded-2xl bg-yellow-500/10 flex items-center justify-center mb-5">
+            <i data-lucide="scale" class="w-7 h-7 text-yellow-400"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Legal & Compliance</h3>
+          <p class="text-gray-400 text-sm mb-5 leading-relaxed">Stop drowning in documents. AI reads, summarizes, and flags risks in seconds instead of days.</p>
+          <div class="flex items-center gap-2 text-brand-300 text-sm font-semibold">
+            <span>See Transformation</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- E-Commerce -->
+        <div class="usecase-card reveal-section" onclick="openUseCaseModal('ecommerce')">
+          <div class="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-5">
+            <i data-lucide="shopping-cart" class="w-7 h-7 text-blue-400"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">E-Commerce & Retail</h3>
+          <p class="text-gray-400 text-sm mb-5 leading-relaxed">Move from generic storefronts to AI-personalized experiences that boost conversion by 40%+.</p>
+          <div class="flex items-center gap-2 text-brand-300 text-sm font-semibold">
+            <span>See Transformation</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="usecase-card reveal-section" onclick="openUseCaseModal('education')">
+          <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-5">
+            <i data-lucide="graduation-cap" class="w-7 h-7 text-purple-400"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Education & EdTech</h3>
+          <p class="text-gray-400 text-sm mb-5 leading-relaxed">One-size-fits-all is dead. AI tutors, adaptive learning, and automated grading at a fraction of the cost.</p>
+          <div class="flex items-center gap-2 text-brand-300 text-sm font-semibold">
+            <span>See Transformation</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Real Estate -->
+        <div class="usecase-card reveal-section" onclick="openUseCaseModal('realestate')">
+          <div class="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mb-5">
+            <i data-lucide="building-2" class="w-7 h-7 text-orange-400"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Real Estate & PropTech</h3>
+          <p class="text-gray-400 text-sm mb-5 leading-relaxed">AI-powered property valuation, virtual tours, and automated lead nurturing replacing manual chaos.</p>
+          <div class="flex items-center gap-2 text-brand-300 text-sm font-semibold">
+            <span>See Transformation</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ USE CASE MODAL ═══════════════ -->
+  <div id="usecase-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10">
+        <div class="flex items-center gap-3">
+          <div id="modal-icon" class="w-10 h-10 rounded-xl flex items-center justify-center"></div>
+          <div>
+            <h3 id="modal-title" class="text-lg font-bold text-white"></h3>
+            <p class="text-xs text-gray-500">Legacy vs AI-Powered Transformation</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span id="slide-counter" class="text-sm text-gray-400 font-mono"></span>
+          <button onclick="closeUseCaseModal()" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide Content -->
+      <div class="modal-slide-container">
+        <div id="slide-content" class="px-6 py-8"></div>
+      </div>
+
+      <!-- Slide Progress Bar -->
+      <div class="px-6 pb-2">
+        <div class="w-full h-1 rounded-full bg-white/5">
+          <div id="slide-progress" class="h-1 rounded-full bg-brand-500 transition-all duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Modal Footer / Navigation -->
+      <div class="flex items-center justify-between px-6 py-4 border-t border-white/10">
+        <button id="prev-btn" onclick="prevSlide()" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-sm font-medium transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+          <i data-lucide="chevron-left" class="w-4 h-4"></i>
+          Previous
+        </button>
+        <div id="slide-dots" class="hidden sm:flex items-center gap-1.5"></div>
+        <button id="next-btn" onclick="nextSlide()" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-sm font-medium transition-colors">
+          Next
+          <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ TECH STACK ═══════════════ -->
+  <section id="tech" class="py-24 md:py-32 relative bg-surface-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-section">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-500/10 text-brand-300 text-sm font-medium mb-4">
+          <i data-lucide="wrench" class="w-4 h-4"></i>
+          Tech Stack
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          Tools of the <span class="text-gradient">Trade</span>
+        </h2>
+        <p class="text-gray-400">Battle-tested technologies I use to build production-grade systems.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Frontend -->
+        <div class="tech-stack-card reveal-section">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center">
+              <i data-lucide="layout" class="w-5 h-5 text-blue-400"></i>
+            </div>
+            <h3 class="font-bold text-lg">Frontend</h3>
+          </div>
+          <div class="space-y-3">
+            <div class="tech-item">React / Next.js</div>
+            <div class="tech-item">Angular</div>
+            <div class="tech-item">TypeScript</div>
+            <div class="tech-item">Tailwind CSS</div>
+            <div class="tech-item">Framer Motion</div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="tech-stack-card reveal-section">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center">
+              <i data-lucide="server" class="w-5 h-5 text-green-400"></i>
+            </div>
+            <h3 class="font-bold text-lg">Backend</h3>
+          </div>
+          <div class="space-y-3">
+            <div class="tech-item">Node.js / Express</div>
+            <div class="tech-item">NestJS</div>
+            <div class="tech-item">Python / FastAPI</div>
+            <div class="tech-item">MongoDB</div>
+            <div class="tech-item">PostgreSQL</div>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="tech-stack-card reveal-section">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
+              <i data-lucide="cloud" class="w-5 h-5 text-orange-400"></i>
+            </div>
+            <h3 class="font-bold text-lg">Cloud & DevOps</h3>
+          </div>
+          <div class="space-y-3">
+            <div class="tech-item">AWS (EC2, S3, Lambda)</div>
+            <div class="tech-item">Vercel</div>
+            <div class="tech-item">Docker</div>
+            <div class="tech-item">Supabase</div>
+            <div class="tech-item">GitHub Actions</div>
+          </div>
+        </div>
+
+        <!-- AI -->
+        <div class="tech-stack-card reveal-section">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-brand-500/10 flex items-center justify-center">
+              <i data-lucide="brain" class="w-5 h-5 text-brand-400"></i>
+            </div>
+            <h3 class="font-bold text-lg">AI & ML</h3>
+          </div>
+          <div class="space-y-3">
+            <div class="tech-item">OpenAI / GPT</div>
+            <div class="tech-item">LangChain</div>
+            <div class="tech-item">RAG Pipelines</div>
+            <div class="tech-item">Prompt Engineering</div>
+            <div class="tech-item">Vector Databases</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ AI CONSULTANT SHOWCASE ═══════════════ -->
+  <section id="ai-consultant" class="py-24 md:py-32 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-500/5 rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <!-- Left: Content -->
+        <div class="reveal-section">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-500/10 text-brand-300 text-sm font-medium mb-4">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            AI-Powered
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+            Free <span class="text-gradient">AI Project Consultant</span>
+          </h2>
+          <p class="text-gray-400 mb-8 leading-relaxed">
+            Not sure what tech stack fits your project? Tell me your idea and get an instant architecture recommendation, timeline estimate, and ballpark cost &mdash; powered by AI.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-green-500/10 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4 text-green-400"></i>
+              </div>
+              <div>
+                <div class="font-medium text-white">Architecture Recommendations</div>
+                <div class="text-sm text-gray-500">Get a suggested tech stack tailored to your project needs</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-green-500/10 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4 text-green-400"></i>
+              </div>
+              <div>
+                <div class="font-medium text-white">Timeline Estimates</div>
+                <div class="text-sm text-gray-500">Understand how long your project will take to build</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-green-500/10 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4 text-green-400"></i>
+              </div>
+              <div>
+                <div class="font-medium text-white">Ballpark Pricing</div>
+                <div class="text-sm text-gray-500">Get a rough cost estimate before committing</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <a href="https://wa.me/919999999999?text=Hi%20Arjun%2C%20I%20have%20a%20project%20idea%20I%27d%20like%20to%20discuss" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 bg-brand-500 hover:bg-brand-600 rounded-2xl font-bold transition-all hover:shadow-xl hover:shadow-brand-500/30 hover:-translate-y-0.5">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              Get Free Consultation
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Chat Mock -->
+        <div class="reveal-section">
+          <div class="bg-surface-800 rounded-3xl border border-white/5 overflow-hidden shadow-2xl">
+            <!-- Chat Header -->
+            <div class="flex items-center gap-3 px-6 py-4 border-b border-white/5">
+              <div class="w-3 h-3 rounded-full bg-red-400"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+              <div class="w-3 h-3 rounded-full bg-green-400"></div>
+              <span class="text-sm text-gray-400 ml-2">AI Project Consultant</span>
+            </div>
+            <!-- Chat Messages -->
+            <div class="p-6 space-y-4">
+              <!-- User message -->
+              <div class="flex justify-end">
+                <div class="bg-brand-500 rounded-2xl rounded-tr-md px-4 py-3 max-w-[80%]">
+                  <p class="text-sm">I want to build a healthcare appointment booking app with video consultations</p>
+                </div>
+              </div>
+              <!-- AI Response -->
+              <div class="flex justify-start">
+                <div class="bg-surface-900 rounded-2xl rounded-tl-md px-4 py-3 max-w-[85%] border border-white/5">
+                  <div class="text-sm space-y-3">
+                    <p class="text-gray-300">Great choice! Here's my recommendation:</p>
+                    <div>
+                      <div class="text-brand-300 font-medium text-xs mb-1">ARCHITECTURE</div>
+                      <p class="text-gray-400 text-xs">React + Node.js + MongoDB + WebRTC for video. Deploy on AWS with HIPAA compliance.</p>
+                    </div>
+                    <div>
+                      <div class="text-green-300 font-medium text-xs mb-1">TIMELINE</div>
+                      <p class="text-gray-400 text-xs">MVP: 8-10 weeks | Full Platform: 16-20 weeks</p>
+                    </div>
+                    <div>
+                      <div class="text-orange-300 font-medium text-xs mb-1">ESTIMATED COST</div>
+                      <p class="text-gray-400 text-xs">$8,000 - $15,000 (MVP) | $25,000 - $40,000 (Full)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Typing indicator -->
+              <div class="flex justify-start">
+                <div class="bg-surface-900 rounded-2xl px-4 py-3 border border-white/5">
+                  <div class="flex gap-1">
+                    <div class="w-2 h-2 bg-gray-500 rounded-full animate-bounce"></div>
+                    <div class="w-2 h-2 bg-gray-500 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                    <div class="w-2 h-2 bg-gray-500 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT / CTA ═══════════════ -->
+  <section id="contact" class="py-24 md:py-32 relative bg-surface-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center reveal-section">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-500/10 text-brand-300 text-sm font-medium mb-4">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          Let's Connect
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+          Ready to Build
+          <span class="text-gradient">Something Great?</span>
+        </h2>
+        <p class="text-gray-400 text-lg mb-12 leading-relaxed">
+          Whether you have a clear vision or just a spark of an idea, let's talk. I'll help you turn it into a scalable, production-ready system.
+        </p>
+
+        <!-- Contact Options -->
+        <div class="grid sm:grid-cols-3 gap-6 mb-12">
+          <!-- WhatsApp -->
+          <a href="https://wa.me/919999999999?text=Hi%20Arjun%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" class="contact-card group">
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-green-500/10 flex items-center justify-center mb-4 group-hover:bg-green-500/20 transition-colors">
+              <i data-lucide="message-circle" class="w-7 h-7 text-green-400"></i>
+            </div>
+            <div class="font-bold text-white mb-1">WhatsApp</div>
+            <div class="text-sm text-gray-500">Quick response, anytime</div>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:hello@arjunkumar.dev?subject=Project%20Inquiry" class="contact-card group">
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-blue-500/10 flex items-center justify-center mb-4 group-hover:bg-blue-500/20 transition-colors">
+              <i data-lucide="mail" class="w-7 h-7 text-blue-400"></i>
+            </div>
+            <div class="font-bold text-white mb-1">Email</div>
+            <div class="text-sm text-gray-500">hello@arjunkumar.dev</div>
+          </a>
+
+          <!-- Calendar -->
+          <a href="https://calendly.com" target="_blank" rel="noopener" class="contact-card group">
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-brand-500/10 flex items-center justify-center mb-4 group-hover:bg-brand-500/20 transition-colors">
+              <i data-lucide="calendar" class="w-7 h-7 text-brand-400"></i>
+            </div>
+            <div class="font-bold text-white mb-1">Book a Call</div>
+            <div class="text-sm text-gray-500">30-min free consultation</div>
+          </a>
+        </div>
+
+        <!-- Big CTA -->
+        <a href="https://wa.me/919999999999?text=Hi%20Arjun%2C%20I%27m%20ready%20to%20start%20a%20project" target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 rounded-2xl text-lg font-bold transition-all hover:shadow-2xl hover:shadow-brand-500/30 hover:-translate-y-1">
+          <i data-lucide="rocket" class="w-6 h-6"></i>
+          Start Your Project Today
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="py-12 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center font-bold text-sm">A</div>
+          <span class="text-lg font-bold">
+            <span class="text-white">arjun</span><span class="text-brand-400">.dev</span>
+          </span>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex items-center gap-4">
+          <a href="https://github.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors" aria-label="GitHub">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors" aria-label="LinkedIn">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors" aria-label="Twitter">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="mailto:hello@arjunkumar.dev" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors" aria-label="Email">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-sm text-gray-500">
+          &copy; 2026 Arjun Kumar. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
