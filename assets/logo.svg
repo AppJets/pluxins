@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9355f7"/>
+      <stop offset="50%" style="stop-color:#7c2df5"/>
+      <stop offset="100%" style="stop-color:#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <!-- Hexagonal P shape -->
+  <path d="M256 48 L432 144 L432 336 L360 380 L360 240 L256 184 L152 240 L152 336 L256 392 L320 356 L320 420 L256 460 L80 364 L80 144 Z" fill="url(#grad)"/>
+</svg>
