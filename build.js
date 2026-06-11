@@ -38,6 +38,11 @@ function copyDir(src, dst) {
   }
 }
 
-fs.rmSync(OUT, { recursive: true, force: true });
+try {
+  fs.rmSync(OUT, { recursive: true, force: true, maxRetries: 3 });
+} catch (e) {
+  // Windows: a dev server may hold the folder open; overwrite in place.
+  console.warn('Could not clean public/, overwriting in place:', e.code);
+}
 copyDir(ROOT, OUT);
 console.log(`Built ${pages} pages to public/`);
