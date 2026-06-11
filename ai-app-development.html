@@ -33,46 +33,7 @@
 <body class="bg-surface-950 text-white font-sans antialiased">
 
   <!-- Navigation -->
-  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-scrolled">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-14 md:h-16">
-        <div class="flex items-center gap-8">
-          <a href="index.html" class="flex items-center gap-2.5 group">
-            <img src="assets/favicon.svg" alt="Pluxins" class="w-8 h-8 transition-transform group-hover:scale-110">
-            <span class="text-lg font-bold tracking-tight text-white">Pluxins</span>
-          </a>
-          <div class="hidden md:flex items-center gap-0.5">
-            <a href="index.html#about" class="nav-link">About</a>
-            <a href="index.html#services" class="nav-link">Services</a>
-            <div class="relative group">
-              <a href="#" class="nav-link inline-flex items-center gap-1">App Store <i data-lucide="chevron-down" class="w-4 h-4"></i></a>
-              <div class="mega-menu">
-                <div class="grid grid-cols-3 gap-6">
-                  <a href="ai-apps.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-3"><i data-lucide="cpu" class="w-5 h-5 text-red-400"></i></div><h4 class="font-semibold text-white mb-1">AI Apps</h4><p class="text-xs text-gray-400">Clinic, School & Ecommerce</p></a>
-                  <a href="marketplace.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-3"><i data-lucide="store" class="w-5 h-5 text-blue-400"></i></div><h4 class="font-semibold text-white mb-1">Marketplace</h4><p class="text-xs text-gray-400">Get listed on top platforms</p></a>
-                  <a href="courses.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center mb-3"><i data-lucide="graduation-cap" class="w-5 h-5 text-green-400"></i></div><h4 class="font-semibold text-white mb-1">Courses</h4><p class="text-xs text-gray-400">Learn AI & development</p></a>
-                </div>
-              </div>
-            </div>
-            <a href="index.html#portfolio" class="nav-link">Portfolio</a>
-            <a href="index.html#contact" class="nav-link">Contact</a>
-          </div>
-        </div>
-        <div class="flex items-center gap-2">
-          <a href="https://calendly.com/arjunkarya/online-video" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-white text-black hover:bg-gray-200 rounded-lg text-sm font-semibold transition-all">Let's Meet</a>
-          <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-white/10"><i data-lucide="menu" class="w-6 h-6"></i></button>
-        </div>
-      </div>
-    </div>
-    <div id="mobile-menu" class="md:hidden hidden bg-surface-900/98 backdrop-blur-xl border-t border-white/5">
-      <div class="px-4 py-6 space-y-1">
-        <a href="index.html" class="mobile-nav-link">Home</a>
-        <a href="ai-apps.html" class="mobile-nav-link">AI Apps</a>
-        <a href="marketplace.html" class="mobile-nav-link">Marketplace</a>
-        <a href="courses.html" class="mobile-nav-link">Courses</a>
-      </div>
-    </div>
-  </nav>
+  <!-- @include header -->
 
   <!-- Hero Section -->
   <section class="pt-28 pb-16 relative">
@@ -284,19 +245,6 @@
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-white/5 py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div class="flex items-center gap-2"><img src="assets/favicon.svg" alt="Pluxins" class="w-6 h-6"><span class="text-sm font-bold text-white">Pluxins</span></div>
-        <div class="flex items-center gap-6">
-          <a href="ai-apps.html" class="text-sm text-gray-400 hover:text-white">AI Apps</a>
-          <a href="marketplace.html" class="text-sm text-gray-400 hover:text-white">Marketplace</a>
-          <a href="courses.html" class="text-sm text-gray-400 hover:text-white">Courses</a>
-        </div>
-        <div class="text-xs text-gray-600">&copy; 2026 Pluxins. All rights reserved.</div>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+  <!-- @include footer -->
 </body>
 </html>
