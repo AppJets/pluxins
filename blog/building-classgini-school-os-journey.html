@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Building ClassGini: My Journey Creating a School OS | Founder Story</title>
+  <meta name="description" content="The story behind ClassGini - why I left a comfortable career to build a Student Success Operating System. Lessons from building EdTech for Indian schools.">
+  <meta name="keywords" content="ClassGini, school operating system, EdTech founder story, building EdTech, student success platform, school management startup, EdTech India, founder journey">
+  <meta name="author" content="Arjun Kumar">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://pluxins.vercel.app/blog/building-classgini-school-os-journey.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Building ClassGini: My Journey Creating a School OS">
+  <meta property="og:description" content="Founder story: Why I'm building a Student Success Operating System for Indian schools.">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2025-01-11T00:00:00+00:00">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Building ClassGini: My Journey Creating a School OS",
+    "description": "Founder story behind ClassGini - a Student Success Operating System for Indian schools.",
+    "author": {"@type": "Person", "name": "Arjun Kumar"},
+    "publisher": {"@type": "Organization", "name": "Pluxins"},
+    "datePublished": "2025-01-11"
+  }
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+            heading: ['Space Grotesk', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: { 300: '#9355f7', 400: '#7c2df5', 500: '#6d28d9', 600: '#5b21b6' },
+            surface: { 800: '#1e1b2e', 850: '#181526', 900: '#0f0d1a', 950: '#0a0814' }
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-surface-950 text-white font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-scrolled">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14 md:h-16">
+        <div class="flex items-center gap-8">
+          <a href="../index.html" class="flex items-center gap-2.5">
+            <img src="../assets/favicon.svg" alt="Pluxins" class="w-8 h-8">
+            <span class="text-lg font-bold text-white">Pluxins</span>
+          </a>
+          <div class="hidden md:flex items-center gap-0.5">
+            <a href="../index.html#services" class="nav-link">Services</a>
+            <a href="../blog.html" class="nav-link text-white">Blog</a>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+          </div>
+        </div>
+        <a href="https://calendly.com/arjunkarya/online-video" target="_blank" class="inline-flex px-4 py-2 bg-white text-black rounded-lg text-sm font-semibold">
+          Let's Talk
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="pt-24 pb-8">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-gray-500 mb-8">
+        <a href="../index.html" class="hover:text-white">Home</a>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        <a href="../blog.html" class="hover:text-white">Blog</a>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        <span class="text-gray-400">Founder Story</span>
+      </nav>
+
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm font-medium mb-4">
+        <i data-lucide="heart" class="w-4 h-4"></i>
+        Personal
+      </span>
+
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+        Building ClassGini: My Journey Creating a School OS
+      </h1>
+
+      <div class="flex flex-wrap items-center gap-6 text-sm text-gray-400 mb-8">
+        <div class="flex items-center gap-2">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-brand-500 to-blue-500 flex items-center justify-center text-white font-bold">AK</div>
+          <div>
+            <div class="text-white font-medium">Arjun Kumar</div>
+            <div class="text-xs">Founder, ClassGini</div>
+          </div>
+        </div>
+        <span class="flex items-center gap-1">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <time datetime="2025-01-11">Jan 11, 2025</time>
+        </span>
+        <span class="flex items-center gap-1">
+          <i data-lucide="clock" class="w-4 h-4"></i>
+          8 min read
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Content -->
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="blog-content">
+
+      <p class="lead">
+        After 15 years of building software for others - enterprise systems, healthcare platforms, e-commerce solutions - I found myself asking a question that wouldn't go away: "What would I build if I could build anything?" The answer led me to ClassGini.
+      </p>
+
+      <h2>The Moment That Started It All</h2>
+
+      <p>It was a conversation with my cousin. Her daughter had just finished Class 10 with excellent marks. "What stream should she take?" she asked me.</p>
+
+      <p>I had no idea. I'm a software architect, not an education counselor. But I tried to help - Googled, asked friends, looked at various career websites. The experience was frustrating:</p>
+
+      <ul>
+        <li>Generic advice that didn't consider her specific strengths</li>
+        <li>Outdated career information</li>
+        <li>No connection between her academic performance and potential paths</li>
+        <li>Parents completely in the dark</li>
+      </ul>
+
+      <p>If we - an educated, urban, tech-savvy family - struggled with this, what happens in millions of households without these advantages?</p>
+
+      <h2>The Problem Is Bigger Than I Thought</h2>
+
+      <p>I spent the next few months researching. What I found was disturbing:</p>
+
+      <ul>
+        <li><strong>70%</strong> of students make stream choices without proper guidance</li>
+        <li><strong>40%</strong> of engineering students regret their choice</li>
+        <li><strong>8%</strong> of schools have qualified career counselors</li>
+        <li><strong>Zero</strong> systems connecting academic data to career outcomes</li>
+      </ul>
+
+      <p>Schools had ERPs for administration. They had learning management systems. But nothing that genuinely helped students succeed in life - not just in exams.</p>
+
+      <h2>What If We Could Build Different?</h2>
+
+      <p>I started imagining a different system. Not an ERP. Not a learning app. A Student Success Operating System that would:</p>
+
+      <div class="grid md:grid-cols-2 gap-4 my-8">
+        <div class="p-5 rounded-xl bg-surface-900/50 border border-white/5">
+          <i data-lucide="target" class="w-6 h-6 text-green-400 mb-2"></i>
+          <h4 class="font-semibold text-white text-sm">Know Each Student</h4>
+          <p class="text-xs text-gray-400">Not just marks, but strengths, interests, learning patterns</p>
+        </div>
+        <div class="p-5 rounded-xl bg-surface-900/50 border border-white/5">
+          <i data-lucide="compass" class="w-6 h-6 text-blue-400 mb-2"></i>
+          <h4 class="font-semibold text-white text-sm">Guide Career Paths</h4>
+          <p class="text-xs text-gray-400">Connect aptitude to careers, not generic advice</p>
+        </div>
+        <div class="p-5 rounded-xl bg-surface-900/50 border border-white/5">
+          <i data-lucide="users" class="w-6 h-6 text-purple-400 mb-2"></i>
+          <h4 class="font-semibold text-white text-sm">Include Parents</h4>
+          <p class="text-xs text-gray-400">Partners in education, not just fee payers</p>
+        </div>
+        <div class="p-5 rounded-xl bg-surface-900/50 border border-white/5">
+          <i data-lucide="brain" class="w-6 h-6 text-orange-400 mb-2"></i>
+          <h4 class="font-semibold text-white text-sm">Use AI Wisely</h4>
+          <p class="text-xs text-gray-400">Insights, not just data. Recommendations, not just reports.</p>
+        </div>
+      </div>
+
+      <h2>Taking the Leap</h2>
+
+      <p>In 2024, I made the decision. After 15 years of building for others, I would build this for myself - and for millions of students who deserve better.</p>
+
+      <p>It wasn't easy. Leaving steady income. Explaining to family why I'm "starting over." The fear of failure after years of success.</p>
+
+      <p>But some things are worth the risk.</p>
+
+      <h2>What We're Building</h2>
+
+      <p>ClassGini is a Student Success Operating System. Here's what makes it different:</p>
+
+      <h3>1. Student-Centric, Not Admin-Centric</h3>
+      <p>Every feature is designed around the question: "Does this help the student succeed?" Not "Does this make administration easier?"</p>
+
+      <h3>2. Parent as Partner</h3>
+      <p>Parents get real insights, not just report cards. "Your child is strong in logical reasoning but needs support in verbal expression. Here's what you can do."</p>
+
+      <h3>3. Career Guidance Built-In</h3>
+      <p>Starting from Class 8, students explore careers. By Class 10, they have data-driven recommendations for stream selection.</p>
+
+      <h3>4. Works for All Schools</h3>
+      <p>Not just elite urban schools. We're designing for:</p>
+      <ul>
+        <li>Limited internet connectivity</li>
+        <li>Regional languages</li>
+        <li>First-generation smartphone users</li>
+        <li>Schools without tech-savvy staff</li>
+      </ul>
+
+      <h2>Where We Are Now</h2>
+
+      <p>We're currently:</p>
+      <ul>
+        <li>Building the core platform</li>
+        <li>Piloting with 5 schools</li>
+        <li>Refining based on real feedback</li>
+        <li>Preparing for wider launch</li>
+      </ul>
+
+      <p>It's hard. Every day brings new challenges. But every conversation with a parent who says "This is exactly what we needed" or a student who discovered a career they didn't know existed - that's why we do this.</p>
+
+      <h2>What I've Learned So Far</h2>
+
+      <ol>
+        <li><strong>Domain expertise matters more than tech sophistication.</strong> Understanding how schools actually work was harder than building the software.</li>
+        <li><strong>Parents are underserved.</strong> They want to help but don't know how. Give them tools, not just information.</li>
+        <li><strong>Simple > Complex.</strong> Schools don't want more features. They want features that work without training.</li>
+        <li><strong>Trust is everything.</strong> Schools won't give you student data until they trust you completely. Earn it.</li>
+        <li><strong>India is not one market.</strong> What works in Delhi won't work in rural Bihar. Design for diversity.</li>
+      </ol>
+
+      <h2>The Vision</h2>
+
+      <p>In 5 years, I want ClassGini to be the platform that schools run on - not for administration, but for student success. I want every student in India to have access to the kind of guidance that today only privileged few get.</p>
+
+      <p>I want the cousin's daughter scenario to be impossible - no child should make life decisions without proper information and guidance.</p>
+
+      <p>It's ambitious. Maybe naive. But after 15 years of building what others asked for, I finally get to build what I believe matters.</p>
+
+      <h2>Join the Journey</h2>
+
+      <p>If you're:</p>
+      <ul>
+        <li>A school looking for better student success tools</li>
+        <li>A parent frustrated with current school communication</li>
+        <li>An educator who believes we can do better</li>
+        <li>An investor interested in EdTech with purpose</li>
+      </ul>
+
+      <p>I'd love to talk.</p>
+
+      <!-- CTA -->
+      <div class="p-8 rounded-2xl bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 my-12 text-center">
+        <h3 class="text-2xl font-bold mb-4">Let's Build Something Meaningful</h3>
+        <p class="text-gray-400 mb-6">If education matters to you, let's connect.</p>
+        <a href="https://calendly.com/arjunkarya/online-video" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-black rounded-xl font-semibold">
+          <i data-lucide="calendar" class="w-5 h-5"></i>
+          Schedule a Chat
+        </a>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-white/5 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <img src="../assets/favicon.svg" alt="Pluxins" class="w-6 h-6">
+          <span class="text-sm text-gray-400">Pluxins - By Arjun Kumar</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="../blog.html" class="footer-link">Blog</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
