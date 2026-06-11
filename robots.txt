@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pluxins.vercel.app/sitemap.xml
+Sitemap: https://www.pluxins.com/sitemap.xml

@@ -1,87 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pluxins.vercel.app/</loc>
+    <loc>https://www.pluxins.com/</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://pluxins.vercel.app/ai-app-development.html</loc>
+    <loc>https://www.pluxins.com/ai-app-development.html</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pluxins.vercel.app/ai-apps.html</loc>
+    <loc>https://www.pluxins.com/ai-apps.html</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pluxins.vercel.app/marketplace.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://pluxins.vercel.app/courses.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://pluxins.vercel.app/claude-training.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://pluxins.vercel.app/ai-video-studio.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://pluxins.vercel.app/clinic-ai-app.html</loc>
+    <loc>https://www.pluxins.com/ai-video-studio.html</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pluxins.vercel.app/school-ai-app.html</loc>
+    <loc>https://www.pluxins.com/amazon-seller.html</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pluxins.vercel.app/online-ecommerce.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://pluxins.vercel.app/quickcare-listing.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pluxins.vercel.app/practo-listing.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pluxins.vercel.app/amazon-seller.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pluxins.vercel.app/flipkart-seller.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pluxins.vercel.app/blog.html</loc>
+    <loc>https://www.pluxins.com/blog.html</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pluxins.vercel.app/blog/building-ai-powered-saas.html</loc>
+    <loc>https://www.pluxins.com/claude-training.html</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pluxins.vercel.app/blog/cost-to-build-ai-saas-2025.html</loc>
+    <loc>https://www.pluxins.com/clinic-ai-app.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/courses.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/flipkart-seller.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/marketplace.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/online-ecommerce.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/practo-listing.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/quickcare-listing.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/school-ai-app.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/ai-agent-for-education.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/ai-agents-vs-chatbots.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/ai-medical-scribes-explained.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/build-ai-startup-small-team.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/building-ai-powered-saas.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/building-classgini-school-os-journey.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/cost-telemedicine-app-india.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/cost-to-build-ai-saas-2025.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/rural-students-challenges-after-class-10.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/school-erp-systems-failing-parents.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/sme-compliance-automation-ai.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/top-10-ai-features-saas.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/what-is-student-success-operating-system.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/blog/why-schools-need-career-guidance-technology.html</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.7</priority>
   </url>
