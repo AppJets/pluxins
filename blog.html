@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Pluxins - AI, Development & Tech Insights</title>
+  <meta name="description" content="Explore insights on AI development, full-stack architecture, SaaS building, and tech strategies from Pluxins. Learn from real-world project experiences.">
+  <meta name="keywords" content="AI Blog, Full Stack Development, SaaS Tips, Tech Architecture, MERN Stack, Cloud Computing, Pluxins Blog">
+  <meta name="author" content="Arjun Kumar">
+  <link rel="canonical" href="https://pluxins.vercel.app/blog.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/logo.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog | Pluxins - AI, Development & Tech Insights">
+  <meta property="og:description" content="Explore insights on AI development, full-stack architecture, SaaS building, and tech strategies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pluxins.vercel.app/blog.html">
+  <meta property="og:image" content="https://pluxins.vercel.app/assets/og-blog.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog | Pluxins">
+  <meta name="twitter:description" content="AI, Development & Tech Insights">
+
+  <!-- Schema.org Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Pluxins Blog",
+    "description": "Insights on AI development, full-stack architecture, and tech strategies",
+    "url": "https://pluxins.vercel.app/blog.html",
+    "author": {
+      "@type": "Person",
+      "name": "Arjun Kumar"
+    }
+  }
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+            heading: ['Space Grotesk', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0e7fe',
+              100: '#d9c5fd',
+              200: '#b68dfa',
+              300: '#9355f7',
+              400: '#7c2df5',
+              500: '#6d28d9',
+              600: '#5b21b6',
+              700: '#4c1d95',
+              800: '#3b1578',
+              900: '#2e1065',
+            },
+            surface: {
+              50: '#f8fafc',
+              100: '#f1f5f9',
+              800: '#1e1b2e',
+              850: '#181526',
+              900: '#0f0d1a',
+              950: '#0a0814',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-surface-950 text-white font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-scrolled">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14 md:h-16">
+        <div class="flex items-center gap-8">
+          <a href="index.html" class="flex items-center gap-2.5 group">
+            <img src="assets/favicon.svg" alt="Pluxins" class="w-8 h-8 transition-transform group-hover:scale-110">
+            <span class="text-lg font-bold tracking-tight text-white">Pluxins</span>
+          </a>
+          <div class="hidden md:flex items-center gap-0.5">
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="index.html#services" class="nav-link">Services</a>
+            <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+            <a href="blog.html" class="nav-link text-white">Blog</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="https://calendly.com/arjunkarya/online-video" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-white text-black hover:bg-gray-200 rounded-lg text-sm font-semibold transition-all">
+            Let's Meet
+          </a>
+          <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Toggle menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-16">
+    <div class="absolute inset-0">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/8 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <span class="text-gradient">Blog</span>
+        </h1>
+        <p class="text-lg text-gray-400 mb-8">
+          Insights on AI development, full-stack architecture, SaaS building, and tech strategies from real-world projects.
+        </p>
+        <!-- Category Filter -->
+        <div class="flex flex-wrap justify-center gap-2">
+          <button class="blog-filter-btn active" data-filter="all">All Posts</button>
+          <button class="blog-filter-btn" data-filter="ai">AI & ML</button>
+          <button class="blog-filter-btn" data-filter="development">Development</button>
+          <button class="blog-filter-btn" data-filter="saas">SaaS</button>
+          <button class="blog-filter-btn" data-filter="architecture">Architecture</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="blog-grid">
+
+        <!-- Blog Card Template - Copy this for each new post -->
+        <article class="blog-card" data-category="ai">
+          <a href="blog/building-ai-powered-saas.html" class="block">
+            <div class="blog-card-image">
+              <img src="assets/blog/ai-saas-cover.jpg" alt="Building AI-Powered SaaS" loading="lazy">
+              <span class="blog-category">AI & ML</span>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <time datetime="2024-01-15">Jan 15, 2024</time>
+                <span class="blog-read-time">8 min read</span>
+              </div>
+              <h2 class="blog-title">Building AI-Powered SaaS: A Complete Guide</h2>
+              <p class="blog-excerpt">Learn how to integrate AI capabilities into your SaaS product, from choosing the right models to production deployment strategies.</p>
+              <div class="blog-tags">
+                <span class="blog-tag">OpenAI</span>
+                <span class="blog-tag">Node.js</span>
+                <span class="blog-tag">SaaS</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="development">
+          <a href="blog/mern-stack-best-practices.html" class="block">
+            <div class="blog-card-image">
+              <img src="assets/blog/mern-stack-cover.jpg" alt="MERN Stack Best Practices" loading="lazy">
+              <span class="blog-category">Development</span>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <time datetime="2024-01-10">Jan 10, 2024</time>
+                <span class="blog-read-time">12 min read</span>
+              </div>
+              <h2 class="blog-title">MERN Stack Best Practices for 2024</h2>
+              <p class="blog-excerpt">Optimize your MERN stack applications with these battle-tested patterns for performance, security, and maintainability.</p>
+              <div class="blog-tags">
+                <span class="blog-tag">MongoDB</span>
+                <span class="blog-tag">React</span>
+                <span class="blog-tag">Node.js</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="architecture">
+          <a href="blog/scaling-microservices.html" class="block">
+            <div class="blog-card-image">
+              <img src="assets/blog/microservices-cover.jpg" alt="Scaling Microservices" loading="lazy">
+              <span class="blog-category">Architecture</span>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <time datetime="2024-01-05">Jan 5, 2024</time>
+                <span class="blog-read-time">15 min read</span>
+              </div>
+              <h2 class="blog-title">Scaling Microservices: Lessons from Production</h2>
+              <p class="blog-excerpt">Real-world insights on scaling microservices architecture, including service mesh, observability, and deployment strategies.</p>
+              <div class="blog-tags">
+                <span class="blog-tag">Docker</span>
+                <span class="blog-tag">Kubernetes</span>
+                <span class="blog-tag">AWS</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="saas">
+          <a href="blog/saas-pricing-strategies.html" class="block">
+            <div class="blog-card-image">
+              <img src="assets/blog/saas-pricing-cover.jpg" alt="SaaS Pricing Strategies" loading="lazy">
+              <span class="blog-category">SaaS</span>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <time datetime="2024-01-01">Jan 1, 2024</time>
+                <span class="blog-read-time">10 min read</span>
+              </div>
+              <h2 class="blog-title">SaaS Pricing Strategies That Actually Work</h2>
+              <p class="blog-excerpt">Data-driven approaches to pricing your SaaS product, from freemium models to enterprise tiers.</p>
+              <div class="blog-tags">
+                <span class="blog-tag">Pricing</span>
+                <span class="blog-tag">Strategy</span>
+                <span class="blog-tag">Growth</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="ai">
+          <a href="blog/prompt-engineering-guide.html" class="block">
+            <div class="blog-card-image">
+              <img src="assets/blog/prompt-engineering-cover.jpg" alt="Prompt Engineering Guide" loading="lazy">
+              <span class="blog-category">AI & ML</span>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <time datetime="2023-12-28">Dec 28, 2023</time>
+                <span class="blog-read-time">14 min read</span>
+              </div>
+              <h2 class="blog-title">Prompt Engineering: From Basics to Production</h2>
+              <p class="blog-excerpt">Master the art of prompt engineering with techniques for reliable, consistent AI outputs in production applications.</p>
+              <div class="blog-tags">
+                <span class="blog-tag">GPT-4</span>
+                <span class="blog-tag">Claude</span>
+                <span class="blog-tag">Prompts</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="development">
+          <a href="blog/nextjs-performance-optimization.html" class="block">
+            <div class="blog-card-image">
+              <img src="assets/blog/nextjs-cover.jpg" alt="Next.js Performance" loading="lazy">
+              <span class="blog-category">Development</span>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <time datetime="2023-12-20">Dec 20, 2023</time>
+                <span class="blog-read-time">11 min read</span>
+              </div>
+              <h2 class="blog-title">Next.js Performance Optimization Checklist</h2>
+              <p class="blog-excerpt">A comprehensive guide to making your Next.js applications lightning fast with real performance metrics.</p>
+              <div class="blog-tags">
+                <span class="blog-tag">Next.js</span>
+                <span class="blog-tag">Performance</span>
+                <span class="blog-tag">SEO</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Load More -->
+      <div class="text-center mt-12">
+        <button id="load-more" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-500/30 transition-all text-sm font-medium">
+          <i data-lucide="plus" class="w-4 h-4"></i>
+          Load More Posts
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-16 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-medium mb-6">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          Newsletter
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Stay Updated</h2>
+        <p class="text-gray-400 mb-8">Get the latest insights on AI development and tech strategies delivered to your inbox.</p>
+        <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <input type="email" placeholder="your@email.com" class="flex-1 px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-brand-500/50 focus:outline-none text-white placeholder-gray-500">
+          <button type="submit" class="px-6 py-3 bg-brand-500 hover:bg-brand-600 rounded-xl font-semibold transition-colors">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <img src="assets/favicon.svg" alt="Pluxins" class="w-6 h-6">
+          <span class="text-sm text-gray-400">Pluxins - By Arjun Kumar</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="index.html#portfolio" class="footer-link">Portfolio</a>
+          <a href="index.html#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Category filter
+    const filterBtns = document.querySelectorAll('.blog-filter-btn');
+    const blogCards = document.querySelectorAll('.blog-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active state
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        // Filter cards
+        blogCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'block';
+            card.style.animation = 'fade-in-up 0.5s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

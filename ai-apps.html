@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Apps | Pluxins App Store</title>
+  <meta name="description" content="Ready-to-deploy AI applications for Clinics, Schools, and E-commerce. Yearly subscription-based AI-powered solutions.">
+  <meta name="keywords" content="AI Apps, Clinic Management, School Management, Ecommerce Platform, AI Solutions">
+  <meta name="author" content="Arjun Kumar">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/logo.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Apps | Pluxins App Store">
+  <meta property="og:description" content="Ready-to-deploy AI applications for Clinics, Schools, and E-commerce.">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+            heading: ['Space Grotesk', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0e7fe',
+              100: '#d9c5fd',
+              200: '#b68dfa',
+              300: '#9355f7',
+              400: '#7c2df5',
+              500: '#6d28d9',
+              600: '#5b21b6',
+              700: '#4c1d95',
+              800: '#3b1578',
+              900: '#2e1065',
+            },
+            surface: {
+              50: '#f8fafc',
+              100: '#f1f5f9',
+              800: '#1e1b2e',
+              850: '#181526',
+              900: '#0f0d1a',
+              950: '#0a0814',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-surface-950 text-white font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-scrolled">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14 md:h-16">
+        <div class="flex items-center gap-8">
+          <a href="index.html" class="flex items-center gap-2.5 group">
+            <img src="assets/favicon.svg" alt="Pluxins" class="w-8 h-8 transition-transform group-hover:scale-110">
+            <span class="text-lg font-bold tracking-tight">
+              <span class="text-white">Pluxins</span>
+            </span>
+          </a>
+          <div class="hidden md:flex items-center gap-0.5">
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="index.html#services" class="nav-link">Services</a>
+            <div class="relative group">
+              <a href="#" class="nav-link inline-flex items-center gap-1">
+                App Store
+                <i data-lucide="chevron-down" class="w-4 h-4"></i>
+              </a>
+              <div class="mega-menu">
+                <div class="grid grid-cols-3 gap-6">
+                  <a href="ai-apps.html" class="mega-menu-item">
+                    <div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-3">
+                      <i data-lucide="cpu" class="w-5 h-5 text-red-400"></i>
+                    </div>
+                    <h4 class="font-semibold text-white mb-1">AI Apps</h4>
+                    <p class="text-xs text-gray-400">Clinic, School & Ecommerce AI solutions</p>
+                  </a>
+                  <a href="marketplace.html" class="mega-menu-item">
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-3">
+                      <i data-lucide="store" class="w-5 h-5 text-blue-400"></i>
+                    </div>
+                    <h4 class="font-semibold text-white mb-1">Marketplace</h4>
+                    <p class="text-xs text-gray-400">Get listed on top platforms</p>
+                  </a>
+                  <a href="courses.html" class="mega-menu-item">
+                    <div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center mb-3">
+                      <i data-lucide="graduation-cap" class="w-5 h-5 text-green-400"></i>
+                    </div>
+                    <h4 class="font-semibold text-white mb-1">Courses</h4>
+                    <p class="text-xs text-gray-400">Learn AI & development skills</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="https://calendly.com/arjunkarya/online-video" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-white text-black hover:bg-gray-200 rounded-lg text-sm font-semibold transition-all">
+            Let's Meet
+          </a>
+          <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Toggle menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-surface-900/98 backdrop-blur-xl border-t border-white/5">
+      <div class="px-4 py-6 space-y-1">
+        <a href="index.html#about" class="mobile-nav-link">About</a>
+        <a href="index.html#services" class="mobile-nav-link">Services</a>
+        <div class="py-2">
+          <div class="text-xs text-gray-500 uppercase tracking-wider px-4 mb-2">App Store</div>
+          <a href="ai-apps.html" class="mobile-nav-link pl-8">AI Apps</a>
+          <a href="marketplace.html" class="mobile-nav-link pl-8">Marketplace</a>
+          <a href="courses.html" class="mobile-nav-link pl-8">Courses</a>
+        </div>
+        <a href="index.html#portfolio" class="mobile-nav-link">Portfolio</a>
+        <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 relative">
+    <div class="absolute inset-0">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-brand-500/8 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-red-500/10 text-red-300 text-sm font-medium mb-4">
+          <i data-lucide="cpu" class="w-4 h-4"></i>
+          AI Applications
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+          Ready-to-Deploy <span class="text-gradient">AI Apps</span>
+        </h1>
+        <p class="text-xl text-gray-400 mb-8">Enterprise-grade AI applications with yearly subscriptions. Get started instantly with our pre-built solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apps Grid -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Clinic AI App -->
+        <div class="bg-surface-900/50 rounded-3xl border border-white/5 overflow-hidden hover:border-red-500/30 transition-all duration-300 group">
+          <div class="aspect-video bg-gradient-to-br from-red-500/20 to-red-600/5 flex items-center justify-center">
+            <div class="w-24 h-24 rounded-3xl bg-red-500/20 flex items-center justify-center">
+              <i data-lucide="stethoscope" class="w-12 h-12 text-red-400"></i>
+            </div>
+          </div>
+          <div class="p-8">
+            <a href="clinic-ai-app.html" class="text-2xl font-bold mb-3 block hover:text-red-400 transition-colors">Clinic AI App</a>
+            <p class="text-gray-400 mb-6">Complete clinic management system with AI-powered features for modern healthcare practices.</p>
+
+            <div class="space-y-3 mb-8">
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                AI-powered patient records management
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Smart appointment scheduling
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Automated billing & invoicing
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Diagnostics assistance AI
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Multi-branch support
+              </div>
+            </div>
+
+            <div class="flex items-end justify-between">
+              <div>
+                <div class="text-xs text-gray-500 mb-1">Yearly Subscription</div>
+                <div class="text-3xl font-bold text-white">₹1,00,000 <span class="text-sm font-normal text-gray-500">+ GST</span></div>
+              </div>
+              <a href="clinic-ai-app.html" class="inline-flex items-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 rounded-xl font-semibold transition-all">
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- School AI App -->
+        <div class="bg-surface-900/50 rounded-3xl border border-white/5 overflow-hidden hover:border-blue-500/30 transition-all duration-300 group">
+          <div class="aspect-video bg-gradient-to-br from-blue-500/20 to-blue-600/5 flex items-center justify-center">
+            <div class="w-24 h-24 rounded-3xl bg-blue-500/20 flex items-center justify-center">
+              <i data-lucide="graduation-cap" class="w-12 h-12 text-blue-400"></i>
+            </div>
+          </div>
+          <div class="p-8">
+            <a href="school-ai-app.html" class="text-2xl font-bold mb-3 block hover:text-blue-400 transition-colors">School AI App</a>
+            <p class="text-gray-400 mb-6">Smart school management platform with AI-driven automation for educational institutions.</p>
+
+            <div class="space-y-3 mb-8">
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                AI attendance tracking
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Automated grading system
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Parent-teacher communication
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Performance analytics dashboard
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Fee management system
+              </div>
+            </div>
+
+            <div class="flex items-end justify-between">
+              <div>
+                <div class="text-xs text-gray-500 mb-1">Yearly Subscription</div>
+                <div class="text-3xl font-bold text-white">₹50,000 <span class="text-sm font-normal text-gray-500">+ GST</span></div>
+              </div>
+              <a href="school-ai-app.html" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-xl font-semibold transition-all">
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Online Ecommerce -->
+        <div class="bg-surface-900/50 rounded-3xl border border-white/5 overflow-hidden hover:border-green-500/30 transition-all duration-300 group">
+          <div class="aspect-video bg-gradient-to-br from-green-500/20 to-green-600/5 flex items-center justify-center">
+            <div class="w-24 h-24 rounded-3xl bg-green-500/20 flex items-center justify-center">
+              <i data-lucide="shopping-cart" class="w-12 h-12 text-green-400"></i>
+            </div>
+          </div>
+          <div class="p-8">
+            <a href="online-ecommerce.html" class="text-2xl font-bold mb-3 block hover:text-green-400 transition-colors">Online Ecommerce</a>
+            <p class="text-gray-400 mb-6">Full-featured ecommerce platform with AI-powered recommendations and smart inventory.</p>
+
+            <div class="space-y-3 mb-8">
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                AI product recommendations
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Smart inventory management
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Multiple payment gateways
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Order & delivery tracking
+              </div>
+              <div class="flex items-center gap-3 text-sm text-gray-300">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+                Analytics & reports
+              </div>
+            </div>
+
+            <div class="flex items-end justify-between">
+              <div>
+                <div class="text-xs text-gray-500 mb-1">Yearly Subscription</div>
+                <div class="text-3xl font-bold text-white">₹36,000 <span class="text-sm font-normal text-gray-500">+ GST</span></div>
+              </div>
+              <a href="online-ecommerce.html" class="inline-flex items-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 rounded-xl font-semibold transition-all">
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="bg-surface-900/50 rounded-3xl border border-white/5 p-12">
+        <h2 class="text-3xl font-bold mb-4">Need a Custom Solution?</h2>
+        <p class="text-gray-400 mb-8">Can't find what you're looking for? Let's build a custom AI application tailored to your business needs.</p>
+        <a href="https://wa.me/919560316581?text=Hi%20Arjun%2C%20I%20need%20a%20custom%20AI%20application" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 bg-brand-500 hover:bg-brand-600 rounded-2xl font-bold transition-all hover:shadow-xl hover:shadow-brand-500/30">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          Discuss Custom Project
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">App Store</h4>
+          <ul class="space-y-2.5">
+            <li><a href="ai-apps.html" class="footer-link">AI Apps</a></li>
+            <li><a href="marketplace.html" class="footer-link">Marketplace</a></li>
+            <li><a href="courses.html" class="footer-link">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Services</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html#services" class="footer-link">SaaS Development</a></li>
+            <li><a href="index.html#services" class="footer-link">AI Integration</a></li>
+            <li><a href="index.html#services" class="footer-link">Cloud & DevOps</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Company</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html#about" class="footer-link">About</a></li>
+            <li><a href="index.html#portfolio" class="footer-link">Portfolio</a></li>
+            <li><a href="index.html#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Connect</h4>
+          <ul class="space-y-2.5">
+            <li><a href="https://github.com/AppJets" target="_blank" rel="noopener" class="footer-link">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/designerarjun/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a></li>
+            <li><a href="https://wa.me/919560316581" target="_blank" rel="noopener" class="footer-link">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-2">
+            <img src="assets/favicon.svg" alt="Pluxins" class="w-6 h-6">
+            <span class="text-sm font-bold text-white">Pluxins</span>
+          </div>
+          <div class="text-xs text-gray-600">
+            &copy; 2026 Pluxins &mdash; By Arjun Kumar. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

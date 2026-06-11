@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Training Course | Pluxins App Store</title>
+  <meta name="description" content="Master Claude AI in 7 days. Learn prompt engineering, workflow automation, and Claude API integration. Course fee Rs 4,999 + TAX.">
+  <meta name="keywords" content="Claude AI Course, Prompt Engineering, Claude Training, AI Productivity">
+  <meta name="author" content="Arjun Kumar">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['DM Sans', 'system-ui', 'sans-serif'], heading: ['Space Grotesk', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: { 300: '#9355f7', 400: '#7c2df5', 500: '#6d28d9', 600: '#5b21b6' },
+            surface: { 800: '#1e1b2e', 850: '#181526', 900: '#0f0d1a', 950: '#0a0814' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-surface-950 text-white font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-scrolled">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14 md:h-16">
+        <div class="flex items-center gap-8">
+          <a href="index.html" class="flex items-center gap-2.5 group">
+            <img src="assets/favicon.svg" alt="Pluxins" class="w-8 h-8 transition-transform group-hover:scale-110">
+            <span class="text-lg font-bold tracking-tight text-white">Pluxins</span>
+          </a>
+          <div class="hidden md:flex items-center gap-0.5">
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="index.html#services" class="nav-link">Services</a>
+            <div class="relative group">
+              <a href="#" class="nav-link inline-flex items-center gap-1">App Store <i data-lucide="chevron-down" class="w-4 h-4"></i></a>
+              <div class="mega-menu">
+                <div class="grid grid-cols-3 gap-6">
+                  <a href="ai-apps.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-3"><i data-lucide="cpu" class="w-5 h-5 text-red-400"></i></div><h4 class="font-semibold text-white mb-1">AI Apps</h4><p class="text-xs text-gray-400">Clinic, School & Ecommerce</p></a>
+                  <a href="marketplace.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-3"><i data-lucide="store" class="w-5 h-5 text-blue-400"></i></div><h4 class="font-semibold text-white mb-1">Marketplace</h4><p class="text-xs text-gray-400">Get listed on top platforms</p></a>
+                  <a href="courses.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center mb-3"><i data-lucide="graduation-cap" class="w-5 h-5 text-green-400"></i></div><h4 class="font-semibold text-white mb-1">Courses</h4><p class="text-xs text-gray-400">Learn AI & development</p></a>
+                </div>
+              </div>
+            </div>
+            <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="https://calendly.com/arjunkarya/online-video" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-white text-black hover:bg-gray-200 rounded-lg text-sm font-semibold transition-all">Let's Meet</a>
+          <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-white/10"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-surface-900/98 backdrop-blur-xl border-t border-white/5">
+      <div class="px-4 py-6 space-y-1">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="ai-apps.html" class="mobile-nav-link">AI Apps</a>
+        <a href="marketplace.html" class="mobile-nav-link">Marketplace</a>
+        <a href="courses.html" class="mobile-nav-link">Courses</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-28 pb-16 relative">
+    <div class="absolute inset-0">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <a href="courses.html" class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-4">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Courses
+          </a>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-violet-500/10 text-violet-300 text-sm font-medium">
+              <i data-lucide="brain" class="w-4 h-4"></i> AI Productivity
+            </div>
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-violet-500/20 text-violet-300 text-xs font-medium">
+              <i data-lucide="calendar" class="w-3 h-3"></i> 7 Days
+            </div>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-bold mb-6">Claude Training</h1>
+          <p class="text-xl text-gray-400 mb-8">Master Claude AI for maximum productivity. Learn advanced prompt engineering, workflow automation, and Claude API integration for developers.</p>
+
+          <div class="flex flex-wrap items-center gap-4 mb-8">
+            <div class="bg-surface-900/50 rounded-xl px-4 py-3 border border-white/5">
+              <div class="text-xs text-gray-500 mb-1">Course Fee</div>
+              <div class="text-2xl font-bold text-white">₹4,999 <span class="text-sm font-normal text-gray-500">+ TAX</span></div>
+            </div>
+            <div class="bg-surface-900/50 rounded-xl px-4 py-3 border border-white/5">
+              <div class="text-xs text-gray-500 mb-1">Duration</div>
+              <div class="text-lg font-semibold text-violet-400">7 Days</div>
+            </div>
+            <div class="bg-surface-900/50 rounded-xl px-4 py-3 border border-white/5">
+              <div class="text-xs text-gray-500 mb-1">Mode</div>
+              <div class="text-lg font-semibold text-white">Live Online</div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919560316581?text=Hi%20Arjun%2C%20I%27m%20interested%20in%20Claude%20Training%20course" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-violet-500 hover:bg-violet-600 rounded-xl font-bold transition-all">
+            <i data-lucide="message-circle" class="w-5 h-5"></i> Enroll Now
+          </a>
+        </div>
+
+        <div class="relative">
+          <div class="aspect-square bg-gradient-to-br from-violet-500/20 to-violet-600/5 rounded-3xl flex items-center justify-center border border-violet-500/20">
+            <div class="w-32 h-32 rounded-3xl bg-violet-500/20 flex items-center justify-center">
+              <i data-lucide="brain" class="w-16 h-16 text-violet-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You'll Learn -->
+  <section class="py-16 bg-surface-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">What You'll Learn</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="pen-tool" class="w-6 h-6 text-violet-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Prompt Engineering</h3>
+          <p class="text-gray-400 text-sm">Master the art of crafting effective prompts. Learn techniques for consistent, high-quality outputs.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="code-2" class="w-6 h-6 text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Claude for Coding</h3>
+          <p class="text-gray-400 text-sm">Use Claude as your AI pair programmer. Debug code, write tests, and accelerate development.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="workflow" class="w-6 h-6 text-green-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Workflow Automation</h3>
+          <p class="text-gray-400 text-sm">Automate repetitive tasks with Claude. Create templates and workflows for common use cases.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="file-text" class="w-6 h-6 text-orange-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Content Creation</h3>
+          <p class="text-gray-400 text-sm">Create blogs, emails, social posts, and marketing content with Claude's help.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="plug" class="w-6 h-6 text-red-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Claude API</h3>
+          <p class="text-gray-400 text-sm">Integrate Claude into your applications. Learn API usage, streaming, and best practices.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="briefcase" class="w-6 h-6 text-teal-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Real-World Use Cases</h3>
+          <p class="text-gray-400 text-sm">Practical examples for business, research, writing, and professional applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">7-Day Curriculum</h2>
+      <div class="space-y-4">
+        <div class="bg-surface-900/50 rounded-xl p-5 border border-white/5">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-violet-500/20 flex items-center justify-center text-violet-400 font-bold">1</div>
+            <div>
+              <h3 class="font-semibold">Introduction to Claude & Fundamentals</h3>
+              <p class="text-sm text-gray-400">Understanding Claude's capabilities, interface, and basic prompting</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-900/50 rounded-xl p-5 border border-white/5">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-violet-500/20 flex items-center justify-center text-violet-400 font-bold">2</div>
+            <div>
+              <h3 class="font-semibold">Advanced Prompt Engineering</h3>
+              <p class="text-sm text-gray-400">Techniques for structured outputs, role-playing, and chain-of-thought</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-900/50 rounded-xl p-5 border border-white/5">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-violet-500/20 flex items-center justify-center text-violet-400 font-bold">3</div>
+            <div>
+              <h3 class="font-semibold">Claude for Developers</h3>
+              <p class="text-sm text-gray-400">Code assistance, debugging, documentation, and development workflows</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-900/50 rounded-xl p-5 border border-white/5">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-violet-500/20 flex items-center justify-center text-violet-400 font-bold">4</div>
+            <div>
+              <h3 class="font-semibold">Content & Writing Workflows</h3>
+              <p class="text-sm text-gray-400">Creating content, editing, research, and professional writing</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-900/50 rounded-xl p-5 border border-white/5">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-violet-500/20 flex items-center justify-center text-violet-400 font-bold">5</div>
+            <div>
+              <h3 class="font-semibold">Automation & Productivity</h3>
+              <p class="text-sm text-gray-400">Building templates, automating tasks, and creating personal workflows</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-900/50 rounded-xl p-5 border border-white/5">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-violet-500/20 flex items-center justify-center text-violet-400 font-bold">6</div>
+            <div>
+              <h3 class="font-semibold">Claude API Integration</h3>
+              <p class="text-sm text-gray-400">API basics, building applications, and integration patterns</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface-900/50 rounded-xl p-5 border border-white/5">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-violet-500/20 flex items-center justify-center text-violet-400 font-bold">7</div>
+            <div>
+              <h3 class="font-semibold">Advanced Use Cases & Best Practices</h3>
+              <p class="text-sm text-gray-400">Real-world applications, tips, and building your personal AI toolkit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Is This For -->
+  <section class="py-16 bg-surface-900/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">Who Is This For?</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="flex gap-4 p-4 bg-surface-900/80 rounded-xl border border-white/5">
+          <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="code" class="w-5 h-5 text-violet-400"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">Developers</h4>
+            <p class="text-sm text-gray-400">Use Claude for coding, debugging, and building AI-powered features.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-900/80 rounded-xl border border-white/5">
+          <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="pen" class="w-5 h-5 text-blue-400"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">Content Creators</h4>
+            <p class="text-sm text-gray-400">Write better content faster with AI assistance.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-900/80 rounded-xl border border-white/5">
+          <div class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="briefcase" class="w-5 h-5 text-green-400"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">Business Professionals</h4>
+            <p class="text-sm text-gray-400">Automate work, draft documents, and boost productivity.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-900/80 rounded-xl border border-white/5">
+          <div class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="rocket" class="w-5 h-5 text-orange-400"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">Entrepreneurs</h4>
+            <p class="text-sm text-gray-400">Leverage AI to scale your business and operations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="bg-gradient-to-r from-violet-500/10 to-violet-600/5 rounded-3xl border border-violet-500/20 p-12">
+        <h2 class="text-3xl font-bold mb-4">Ready to Master Claude AI?</h2>
+        <p class="text-gray-400 mb-8">Join our 7-day intensive program and unlock the full potential of Claude.</p>
+        <a href="https://wa.me/919560316581?text=Hi%20Arjun%2C%20I%27m%20interested%20in%20Claude%20Training%20course" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-violet-500 hover:bg-violet-600 rounded-xl font-bold transition-all">
+          <i data-lucide="message-circle" class="w-5 h-5"></i> Enroll Now - ₹4,999 + TAX
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2"><img src="assets/favicon.svg" alt="Pluxins" class="w-6 h-6"><span class="text-sm font-bold text-white">Pluxins</span></div>
+        <div class="flex items-center gap-6">
+          <a href="ai-apps.html" class="text-sm text-gray-400 hover:text-white">AI Apps</a>
+          <a href="marketplace.html" class="text-sm text-gray-400 hover:text-white">Marketplace</a>
+          <a href="courses.html" class="text-sm text-gray-400 hover:text-white">Courses</a>
+        </div>
+        <div class="text-xs text-gray-600">&copy; 2026 Pluxins. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

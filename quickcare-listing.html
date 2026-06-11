@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickCare Listing | Pluxins App Store</title>
+  <meta name="description" content="Get your healthcare practice listed on QuickCare platform. Complete profile setup and optimization for just Rs 999 + GST.">
+  <meta name="keywords" content="QuickCare Listing, Healthcare Marketing, Doctor Listing, Medical Practice Promotion">
+  <meta name="author" content="Arjun Kumar">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['DM Sans', 'system-ui', 'sans-serif'], heading: ['Space Grotesk', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: { 300: '#9355f7', 400: '#7c2df5', 500: '#6d28d9', 600: '#5b21b6' },
+            surface: { 800: '#1e1b2e', 850: '#181526', 900: '#0f0d1a', 950: '#0a0814' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-surface-950 text-white font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-scrolled">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14 md:h-16">
+        <div class="flex items-center gap-8">
+          <a href="index.html" class="flex items-center gap-2.5 group">
+            <img src="assets/favicon.svg" alt="Pluxins" class="w-8 h-8 transition-transform group-hover:scale-110">
+            <span class="text-lg font-bold tracking-tight text-white">Pluxins</span>
+          </a>
+          <div class="hidden md:flex items-center gap-0.5">
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="index.html#services" class="nav-link">Services</a>
+            <div class="relative group">
+              <a href="#" class="nav-link inline-flex items-center gap-1">App Store <i data-lucide="chevron-down" class="w-4 h-4"></i></a>
+              <div class="mega-menu">
+                <div class="grid grid-cols-3 gap-6">
+                  <a href="ai-apps.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-3"><i data-lucide="cpu" class="w-5 h-5 text-red-400"></i></div><h4 class="font-semibold text-white mb-1">AI Apps</h4><p class="text-xs text-gray-400">Clinic, School & Ecommerce</p></a>
+                  <a href="marketplace.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-3"><i data-lucide="store" class="w-5 h-5 text-blue-400"></i></div><h4 class="font-semibold text-white mb-1">Marketplace</h4><p class="text-xs text-gray-400">Get listed on top platforms</p></a>
+                  <a href="courses.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center mb-3"><i data-lucide="graduation-cap" class="w-5 h-5 text-green-400"></i></div><h4 class="font-semibold text-white mb-1">Courses</h4><p class="text-xs text-gray-400">Learn AI & development</p></a>
+                </div>
+              </div>
+            </div>
+            <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="https://calendly.com/arjunkarya/online-video" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-white text-black hover:bg-gray-200 rounded-lg text-sm font-semibold transition-all">Let's Meet</a>
+          <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-white/10"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-surface-900/98 backdrop-blur-xl border-t border-white/5">
+      <div class="px-4 py-6 space-y-1">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="ai-apps.html" class="mobile-nav-link">AI Apps</a>
+        <a href="marketplace.html" class="mobile-nav-link">Marketplace</a>
+        <a href="courses.html" class="mobile-nav-link">Courses</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-28 pb-16 relative">
+    <div class="absolute inset-0">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <a href="marketplace.html" class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-4">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Marketplace
+          </a>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-teal-500/10 text-teal-300 text-sm font-medium mb-4">
+            <i data-lucide="heart-handshake" class="w-4 h-4"></i> Healthcare Platform
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-bold mb-6">QuickCare Listing</h1>
+          <p class="text-xl text-gray-400 mb-8">Get your healthcare practice listed on QuickCare platform. We handle the complete profile setup and optimization to help you reach more patients.</p>
+
+          <div class="flex flex-wrap items-center gap-4 mb-8">
+            <div class="bg-surface-900/50 rounded-xl px-4 py-3 border border-white/5">
+              <div class="text-xs text-gray-500 mb-1">One-time Fee</div>
+              <div class="text-2xl font-bold text-white">₹999 <span class="text-sm font-normal text-gray-500">+ GST</span></div>
+            </div>
+            <div class="bg-surface-900/50 rounded-xl px-4 py-3 border border-white/5">
+              <div class="text-xs text-gray-500 mb-1">Delivery Time</div>
+              <div class="text-lg font-semibold text-white">24-48 Hours</div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919560316581?text=Hi%20Arjun%2C%20I%27m%20interested%20in%20QuickCare%20Listing" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-teal-500 hover:bg-teal-600 rounded-xl font-bold transition-all">
+            <i data-lucide="message-circle" class="w-5 h-5"></i> Get Listed Now
+          </a>
+        </div>
+
+        <div class="relative">
+          <div class="aspect-square bg-gradient-to-br from-teal-500/20 to-teal-600/5 rounded-3xl flex items-center justify-center border border-teal-500/20">
+            <div class="w-32 h-32 rounded-3xl bg-teal-500/20 flex items-center justify-center">
+              <i data-lucide="heart-handshake" class="w-16 h-16 text-teal-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included -->
+  <section class="py-16 bg-surface-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">What's Included</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="user-plus" class="w-6 h-6 text-teal-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Profile Creation</h3>
+          <p class="text-gray-400 text-sm">Complete profile setup with all your practice details, specializations, and qualifications.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="image" class="w-6 h-6 text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Photo & Media Upload</h3>
+          <p class="text-gray-400 text-sm">Professional photo upload and clinic images to make your profile stand out.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="list-checks" class="w-6 h-6 text-green-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Service Listing</h3>
+          <p class="text-gray-400 text-sm">All your services and treatments listed with proper categorization for easy discovery.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="clock" class="w-6 h-6 text-purple-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Timing Setup</h3>
+          <p class="text-gray-400 text-sm">Consultation timings and availability configured for patient bookings.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="badge-check" class="w-6 h-6 text-orange-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Verification Assistance</h3>
+          <p class="text-gray-400 text-sm">Help with document submission and verification process completion.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="search" class="w-6 h-6 text-red-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">SEO Optimization</h3>
+          <p class="text-gray-400 text-sm">Profile optimized for search visibility within the QuickCare platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">How It Works</h2>
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="w-10 h-10 rounded-full bg-teal-500/20 flex items-center justify-center flex-shrink-0 text-teal-400 font-bold">1</div>
+          <div>
+            <h3 class="font-semibold mb-1">Share Your Details</h3>
+            <p class="text-gray-400 text-sm">Provide your practice information, qualifications, and documents via WhatsApp or email.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-10 h-10 rounded-full bg-teal-500/20 flex items-center justify-center flex-shrink-0 text-teal-400 font-bold">2</div>
+          <div>
+            <h3 class="font-semibold mb-1">We Create Your Profile</h3>
+            <p class="text-gray-400 text-sm">Our team sets up your complete QuickCare profile with all optimizations.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-10 h-10 rounded-full bg-teal-500/20 flex items-center justify-center flex-shrink-0 text-teal-400 font-bold">3</div>
+          <div>
+            <h3 class="font-semibold mb-1">Review & Go Live</h3>
+            <p class="text-gray-400 text-sm">Review your profile, request any changes, and go live to start receiving patients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-surface-900/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Get Listed?</h2>
+      <p class="text-gray-400 mb-8">Start reaching more patients through QuickCare. Get your profile live in just 24-48 hours.</p>
+      <a href="https://wa.me/919560316581?text=Hi%20Arjun%2C%20I%27m%20interested%20in%20QuickCare%20Listing" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-teal-500 hover:bg-teal-600 rounded-xl font-bold transition-all">
+        <i data-lucide="message-circle" class="w-5 h-5"></i> Get Started - ₹999 + GST
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2"><img src="assets/favicon.svg" alt="Pluxins" class="w-6 h-6"><span class="text-sm font-bold text-white">Pluxins</span></div>
+        <div class="flex items-center gap-6">
+          <a href="ai-apps.html" class="text-sm text-gray-400 hover:text-white">AI Apps</a>
+          <a href="marketplace.html" class="text-sm text-gray-400 hover:text-white">Marketplace</a>
+          <a href="courses.html" class="text-sm text-gray-400 hover:text-white">Courses</a>
+        </div>
+        <div class="text-xs text-gray-600">&copy; 2026 Pluxins. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

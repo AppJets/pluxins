@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Seller Listing | Pluxins App Store</title>
+  <meta name="description" content="Complete Flipkart seller account setup with product listing. Reach millions of customers across India for just Rs 4,999 + GST.">
+  <meta name="keywords" content="Flipkart Seller, Flipkart Registration, Ecommerce Listing, Online Selling India">
+  <meta name="author" content="Arjun Kumar">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['DM Sans', 'system-ui', 'sans-serif'], heading: ['Space Grotesk', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: { 300: '#9355f7', 400: '#7c2df5', 500: '#6d28d9', 600: '#5b21b6' },
+            surface: { 800: '#1e1b2e', 850: '#181526', 900: '#0f0d1a', 950: '#0a0814' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-surface-950 text-white font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-scrolled">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14 md:h-16">
+        <div class="flex items-center gap-8">
+          <a href="index.html" class="flex items-center gap-2.5 group">
+            <img src="assets/favicon.svg" alt="Pluxins" class="w-8 h-8 transition-transform group-hover:scale-110">
+            <span class="text-lg font-bold tracking-tight text-white">Pluxins</span>
+          </a>
+          <div class="hidden md:flex items-center gap-0.5">
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="index.html#services" class="nav-link">Services</a>
+            <div class="relative group">
+              <a href="#" class="nav-link inline-flex items-center gap-1">App Store <i data-lucide="chevron-down" class="w-4 h-4"></i></a>
+              <div class="mega-menu">
+                <div class="grid grid-cols-3 gap-6">
+                  <a href="ai-apps.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-3"><i data-lucide="cpu" class="w-5 h-5 text-red-400"></i></div><h4 class="font-semibold text-white mb-1">AI Apps</h4><p class="text-xs text-gray-400">Clinic, School & Ecommerce</p></a>
+                  <a href="marketplace.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-3"><i data-lucide="store" class="w-5 h-5 text-blue-400"></i></div><h4 class="font-semibold text-white mb-1">Marketplace</h4><p class="text-xs text-gray-400">Get listed on top platforms</p></a>
+                  <a href="courses.html" class="mega-menu-item"><div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center mb-3"><i data-lucide="graduation-cap" class="w-5 h-5 text-green-400"></i></div><h4 class="font-semibold text-white mb-1">Courses</h4><p class="text-xs text-gray-400">Learn AI & development</p></a>
+                </div>
+              </div>
+            </div>
+            <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="https://calendly.com/arjunkarya/online-video" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-white text-black hover:bg-gray-200 rounded-lg text-sm font-semibold transition-all">Let's Meet</a>
+          <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-white/10"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-surface-900/98 backdrop-blur-xl border-t border-white/5">
+      <div class="px-4 py-6 space-y-1">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="ai-apps.html" class="mobile-nav-link">AI Apps</a>
+        <a href="marketplace.html" class="mobile-nav-link">Marketplace</a>
+        <a href="courses.html" class="mobile-nav-link">Courses</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-28 pb-16 relative">
+    <div class="absolute inset-0">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <a href="marketplace.html" class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white mb-4">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Marketplace
+          </a>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-yellow-500/10 text-yellow-300 text-sm font-medium mb-4">
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i> E-commerce Platform
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-bold mb-6">Flipkart Seller Listing</h1>
+          <p class="text-xl text-gray-400 mb-8">Start selling on Flipkart - India's homegrown e-commerce giant. Complete seller registration, product listing, and dashboard training included.</p>
+
+          <div class="flex flex-wrap items-center gap-4 mb-8">
+            <div class="bg-surface-900/50 rounded-xl px-4 py-3 border border-white/5">
+              <div class="text-xs text-gray-500 mb-1">One-time Fee</div>
+              <div class="text-2xl font-bold text-white">₹4,999 <span class="text-sm font-normal text-gray-500">+ GST</span></div>
+            </div>
+            <div class="bg-surface-900/50 rounded-xl px-4 py-3 border border-white/5">
+              <div class="text-xs text-gray-500 mb-1">Delivery Time</div>
+              <div class="text-lg font-semibold text-white">3-5 Days</div>
+            </div>
+            <div class="bg-surface-900/50 rounded-xl px-4 py-3 border border-white/5">
+              <div class="text-xs text-gray-500 mb-1">Products</div>
+              <div class="text-lg font-semibold text-white">Up to 10</div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919560316581?text=Hi%20Arjun%2C%20I%27m%20interested%20in%20Flipkart%20Seller%20Listing" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-black rounded-xl font-bold transition-all">
+            <i data-lucide="message-circle" class="w-5 h-5"></i> Get Started
+          </a>
+        </div>
+
+        <div class="relative">
+          <div class="aspect-square bg-gradient-to-br from-yellow-500/20 to-yellow-600/5 rounded-3xl flex items-center justify-center border border-yellow-500/20">
+            <div class="w-32 h-32 rounded-3xl bg-yellow-500/20 flex items-center justify-center">
+              <i data-lucide="shopping-bag" class="w-16 h-16 text-yellow-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included -->
+  <section class="py-16 bg-surface-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">What's Included</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-yellow-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="user-plus" class="w-6 h-6 text-yellow-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Seller Registration</h3>
+          <p class="text-gray-400 text-sm">Complete Flipkart Seller Hub registration and account setup.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="file-check" class="w-6 h-6 text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">GSTIN & Bank Setup</h3>
+          <p class="text-gray-400 text-sm">Complete verification of GST and bank details for payments.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="package" class="w-6 h-6 text-green-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Product Listing (10)</h3>
+          <p class="text-gray-400 text-sm">Up to 10 products listed with optimized catalog content.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="image" class="w-6 h-6 text-purple-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Catalog Quality</h3>
+          <p class="text-gray-400 text-sm">High-quality product images and descriptions for better visibility.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="truck" class="w-6 h-6 text-red-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Shipping Setup</h3>
+          <p class="text-gray-400 text-sm">Ekart logistics integration and shipping configuration.</p>
+        </div>
+        <div class="bg-surface-900/80 rounded-2xl p-6 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="presentation" class="w-6 h-6 text-teal-400"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Dashboard Training</h3>
+          <p class="text-gray-400 text-sm">Complete training on managing your Flipkart seller dashboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requirements -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">Documents Required</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="flex gap-4 p-4 bg-surface-900/50 rounded-xl border border-white/5">
+          <div class="w-8 h-8 rounded-lg bg-yellow-500/10 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="file-text" class="w-4 h-4 text-yellow-400"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">GSTIN Certificate</h4>
+            <p class="text-sm text-gray-400">Valid GST registration for your business entity.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-900/50 rounded-xl border border-white/5">
+          <div class="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="landmark" class="w-4 h-4 text-blue-400"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">Bank Account</h4>
+            <p class="text-sm text-gray-400">Current account with cancelled cheque for verification.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-900/50 rounded-xl border border-white/5">
+          <div class="w-8 h-8 rounded-lg bg-green-500/10 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="id-card" class="w-4 h-4 text-green-400"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">PAN Card</h4>
+            <p class="text-sm text-gray-400">PAN card of business owner or registered company.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-900/50 rounded-xl border border-white/5">
+          <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="image" class="w-4 h-4 text-purple-400"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">Product Images</h4>
+            <p class="text-sm text-gray-400">Quality product photos meeting Flipkart guidelines.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="py-16 bg-surface-900/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-center">Why Sell on Flipkart?</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+        <div class="p-6">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">450M+</div>
+          <p class="text-gray-400">Registered users on Flipkart</p>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">27000+</div>
+          <p class="text-gray-400">PIN codes for delivery</p>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">0%</div>
+          <p class="text-gray-400">Commission on many categories</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Sell on Flipkart?</h2>
+      <p class="text-gray-400 mb-8">Join lakhs of sellers growing their business on Flipkart.</p>
+      <a href="https://wa.me/919560316581?text=Hi%20Arjun%2C%20I%27m%20interested%20in%20Flipkart%20Seller%20Listing" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-black rounded-xl font-bold transition-all">
+        <i data-lucide="message-circle" class="w-5 h-5"></i> Get Started - ₹4,999 + GST
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2"><img src="assets/favicon.svg" alt="Pluxins" class="w-6 h-6"><span class="text-sm font-bold text-white">Pluxins</span></div>
+        <div class="flex items-center gap-6">
+          <a href="ai-apps.html" class="text-sm text-gray-400 hover:text-white">AI Apps</a>
+          <a href="marketplace.html" class="text-sm text-gray-400 hover:text-white">Marketplace</a>
+          <a href="courses.html" class="text-sm text-gray-400 hover:text-white">Courses</a>
+        </div>
+        <div class="text-xs text-gray-600">&copy; 2026 Pluxins. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
