@@ -8,6 +8,7 @@ const OUT = path.join(ROOT, 'public');
 const EXCLUDE = new Set([
   '.git', '.claude', '.vercel', 'node_modules', 'public', 'partials',
   'build.js', 'package.json', 'package-lock.json', '.gitignore', 'README.md',
+  'invoices', 'company docs',
 ]);
 
 const partials = {};

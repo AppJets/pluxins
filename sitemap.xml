@@ -76,6 +76,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.pluxins.com/subsidiaries.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/terms-and-conditions.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/privacy-policy.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pluxins.com/refund-policy.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://www.pluxins.com/blog/ai-agent-for-education.html</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.7</priority>
