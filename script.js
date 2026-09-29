@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initScrollReveal();
   initSmoothScroll();
-  initHeroTerminal();
+  initHeroShowcase();
 });
 
 // ═══════════════ NAVBAR SCROLL EFFECT ═══════════════
@@ -671,180 +671,83 @@ function initSmoothScroll() {
   });
 }
 
-// ═══════════════ HERO TERMINAL ANIMATION ═══════════════
-const terminalScenes = [
+// ═══════════════ HERO APP SHOWCASE ═══════════════
+const showcaseSlides = [
   {
-    tab: 'ai-agent.ts',
-    agent: 'Customer Support Agent',
-    speed: '42ms',
-    lines: [
-      { d: 0,    html: '<span class="t-comment">// Customer query received via WhatsApp</span>' },
-      { d: 400,  html: '<span class="t-keyword">const</span> <span class="t-fn">query</span> <span class="t-operator">=</span> <span class="t-string">"I need a refund for order #4821"</span>' },
-      { d: 800,  html: '' },
-      { d: 1000, html: '<span class="t-comment">// AI Agent processing...</span>' },
-      { d: 1400, html: '<span class="t-keyword">await</span> <span class="t-fn">agent</span>.<span class="t-fn">analyze</span>(query)' },
-      { d: 1800, html: '<span class="t-dim">├─</span> <span class="t-badge t-badge-blue">INTENT</span> <span class="t-output">refund_request</span> <span class="t-dim">(confidence: 0.97)</span>' },
-      { d: 2200, html: '<span class="t-dim">├─</span> <span class="t-badge t-badge-purple">ORDER</span> <span class="t-output">#4821</span> <span class="t-dim">found → $89.99 delivered 3d ago</span>' },
-      { d: 2600, html: '<span class="t-dim">├─</span> <span class="t-badge t-badge-green">POLICY</span> <span class="t-success">eligible for refund ✓</span>' },
-      { d: 3000, html: '<span class="t-dim">└─</span> <span class="t-badge t-badge-orange">ACTION</span> <span class="t-highlight">auto-processing refund...</span>' },
-      { d: 3400, html: '' },
-      { d: 3600, html: '<div class="t-progress-bar"><div class="t-progress-fill" style="width:100%"></div></div>' },
-      { d: 4000, html: '<span class="t-success">✓ Refund of $89.99 processed</span>' },
-      { d: 4300, html: '<span class="t-success">✓ Customer notified via WhatsApp</span>' },
-      { d: 4600, html: '<span class="t-dim">  Total time: </span><span class="t-number">3.2s</span> <span class="t-dim">(vs 24hrs manual)</span>' },
-    ]
+    url: 'classgini.com',
+    link: 'https://www.classgini.com/',
+    audience: 'For Schools, Colleges & Coaching Centers',
+    name: 'ClassGini',
+    tag: 'AI School OS',
+    color: '#10b981'
   },
   {
-    tab: 'legacy-transform.sh',
-    agent: 'Migration Engine',
-    speed: '128ms',
-    lines: [
-      { d: 0,    html: '<span class="t-prompt">$</span> <span class="t-fn">arjun</span> transform <span class="t-string">--from</span> legacy-crm <span class="t-string">--to</span> ai-platform' },
-      { d: 600,  html: '' },
-      { d: 800,  html: '<span class="t-output">⚡ Scanning legacy codebase...</span>' },
-      { d: 1200, html: '<span class="t-dim">   Found:</span> <span class="t-number">247</span> <span class="t-dim">endpoints,</span> <span class="t-number">89</span> <span class="t-dim">tables,</span> <span class="t-number">12</span> <span class="t-dim">services</span>' },
-      { d: 1600, html: '<span class="t-error">   ⚠ 34 deprecated APIs detected</span>' },
-      { d: 2000, html: '<span class="t-error">   ⚠ 0% test coverage</span>' },
-      { d: 2400, html: '' },
-      { d: 2600, html: '<span class="t-output">🔄 Generating AI-powered replacement...</span>' },
-      { d: 3000, html: '<span class="t-dim">├─</span> <span class="t-success">✓</span> REST → GraphQL + AI routing' },
-      { d: 3400, html: '<span class="t-dim">├─</span> <span class="t-success">✓</span> Manual workflows → AI automation' },
-      { d: 3800, html: '<span class="t-dim">├─</span> <span class="t-success">✓</span> Static reports → Real-time AI insights' },
-      { d: 4200, html: '<span class="t-dim">└─</span> <span class="t-success">✓</span> Test suite auto-generated (94% coverage)' },
-      { d: 4600, html: '' },
-      { d: 4800, html: '<span class="t-success">✅ Migration complete!</span> <span class="t-dim">Cost reduced by</span> <span class="t-number">70%</span>' },
-    ]
+    url: 'quickcare.life',
+    link: 'https://quickcare.life/',
+    audience: 'For Hospitals, Doctors, Labs & Pharmacies',
+    name: 'QuickCare',
+    tag: 'Healthcare Marketplace',
+    color: '#14b8a6'
   },
   {
-    tab: 'deploy-agent.yml',
-    agent: 'CI/CD Pipeline',
-    speed: '67ms',
-    lines: [
-      { d: 0,    html: '<span class="t-comment"># AI-powered deployment pipeline</span>' },
-      { d: 400,  html: '<span class="t-keyword">deploy</span><span class="t-operator">:</span>' },
-      { d: 600,  html: '  <span class="t-keyword">ai_review</span><span class="t-operator">:</span> <span class="t-string">true</span>  <span class="t-comment"># AI reviews code before deploy</span>' },
-      { d: 1000, html: '' },
-      { d: 1200, html: '<span class="t-output">▶ Pipeline triggered...</span>' },
-      { d: 1600, html: '<span class="t-dim">├─</span> <span class="t-badge t-badge-blue">BUILD</span> <span class="t-success">compiled in 12s ✓</span>' },
-      { d: 2000, html: '<span class="t-dim">├─</span> <span class="t-badge t-badge-purple">AI REVIEW</span> <span class="t-output">scanning for vulnerabilities...</span>' },
-      { d: 2400, html: '<span class="t-dim">│  </span><span class="t-success">  0 critical, 0 high, 2 info</span>' },
-      { d: 2800, html: '<span class="t-dim">├─</span> <span class="t-badge t-badge-green">TESTS</span> <span class="t-success">247/247 passed ✓</span>' },
-      { d: 3200, html: '<span class="t-dim">├─</span> <span class="t-badge t-badge-orange">PERF</span> <span class="t-output">Lighthouse: </span><span class="t-number">98</span><span class="t-dim">/100</span>' },
-      { d: 3600, html: '<span class="t-dim">└─</span> <span class="t-badge t-badge-green">DEPLOY</span> <span class="t-success">production live ✓</span>' },
-      { d: 4000, html: '' },
-      { d: 4200, html: '<span class="t-success">🚀 Deployed to</span> <span class="t-output">app.client.com</span>' },
-      { d: 4500, html: '<span class="t-dim">   Zero downtime. AI-monitored. Auto-scaling.</span>' },
-    ]
-  },
-  {
-    tab: 'integrate.ts',
-    agent: 'Integration Hub',
-    speed: '38ms',
-    lines: [
-      { d: 0,    html: '<span class="t-comment">// Connecting 5 systems in one API call</span>' },
-      { d: 500,  html: '<span class="t-keyword">const</span> <span class="t-fn">hub</span> <span class="t-operator">=</span> <span class="t-keyword">new</span> <span class="t-fn">AIIntegrationHub</span>()' },
-      { d: 900,  html: '' },
-      { d: 1100, html: '<span class="t-keyword">await</span> <span class="t-fn">hub</span>.<span class="t-fn">connect</span>([' },
-      { d: 1400, html: '  <span class="t-string">"Salesforce CRM"</span>,     <span class="t-comment">// Customer data</span>' },
-      { d: 1700, html: '  <span class="t-string">"Stripe Billing"</span>,     <span class="t-comment">// Payments</span>' },
-      { d: 2000, html: '  <span class="t-string">"Twilio SMS"</span>,         <span class="t-comment">// Notifications</span>' },
-      { d: 2300, html: '  <span class="t-string">"OpenAI GPT-4"</span>,       <span class="t-comment">// AI brain</span>' },
-      { d: 2600, html: '  <span class="t-string">"AWS S3"</span>              <span class="t-comment">// Storage</span>' },
-      { d: 2900, html: '])' },
-      { d: 3200, html: '' },
-      { d: 3400, html: '<span class="t-output">✓ All systems connected</span> <span class="t-dim">in</span> <span class="t-number">1.4s</span>' },
-      { d: 3700, html: '<span class="t-output">✓ AI orchestration active</span> <span class="t-dim">— smart routing enabled</span>' },
-      { d: 4000, html: '<span class="t-success">✓ Zero-code integration dashboard ready</span>' },
-    ]
-  },
-  {
-    tab: 'savings.log',
-    agent: 'Cost Analyzer',
-    speed: '15ms',
-    lines: [
-      { d: 0,    html: '<span class="t-comment">// Project cost comparison report</span>' },
-      { d: 500,  html: '<span class="t-output">━━━ BEFORE (Legacy Approach) ━━━</span>' },
-      { d: 800,  html: '<span class="t-dim">  Team size:</span>      <span class="t-error">15 developers</span>' },
-      { d: 1100, html: '<span class="t-dim">  Timeline:</span>       <span class="t-error">12 months</span>' },
-      { d: 1400, html: '<span class="t-dim">  Total cost:</span>     <span class="t-error">$480,000</span>' },
-      { d: 1700, html: '<span class="t-dim">  Maintenance:</span>    <span class="t-error">$15K/month</span>' },
-      { d: 2100, html: '' },
-      { d: 2300, html: '<span class="t-output">━━━ AFTER (AI-First with Arjun) ━━━</span>' },
-      { d: 2600, html: '<span class="t-dim">  Team size:</span>      <span class="t-success">3 developers + AI</span>' },
-      { d: 2900, html: '<span class="t-dim">  Timeline:</span>       <span class="t-success">8 weeks</span>' },
-      { d: 3200, html: '<span class="t-dim">  Total cost:</span>     <span class="t-success">$35,000</span>' },
-      { d: 3500, html: '<span class="t-dim">  Maintenance:</span>    <span class="t-success">$2K/month (AI-managed)</span>' },
-      { d: 3900, html: '' },
-      { d: 4100, html: '<span class="t-highlight">💰 You save: $445,000 + 10 months</span>' },
-      { d: 4400, html: '<span class="t-success">   That\'s a 93% cost reduction.</span>' },
-    ]
+    url: 'lexorigin.in',
+    link: 'https://www.lexorigin.in/',
+    audience: 'For Lawyers, CAs & Accounting Firms',
+    name: 'Lex Origin',
+    tag: 'AI Legal Platform',
+    color: '#8b5cf6'
   }
 ];
 
-let currentScene = 0;
-let sceneTimeouts = [];
-let sceneInterval = null;
+let currentShowcaseSlide = 0;
+let showcaseInterval = null;
 
-function initHeroTerminal() {
-  const body = document.getElementById('terminal-body');
-  if (!body) return;
+function initHeroShowcase() {
+  const showcase = document.getElementById('app-showcase');
+  if (!showcase) return;
 
-  playScene(0);
+  renderShowcaseSlide(0);
+  startShowcaseAutoplay();
 
-  // Auto-cycle scenes every 8 seconds
-  sceneInterval = setInterval(() => {
-    currentScene = (currentScene + 1) % terminalScenes.length;
-    playScene(currentScene);
-  }, 8000);
-
-  // Click on scene dots
-  document.querySelectorAll('.terminal-scene-dot').forEach(dot => {
+  document.querySelectorAll('.app-showcase-dot').forEach(dot => {
     dot.addEventListener('click', () => {
-      const idx = parseInt(dot.dataset.scene);
-      currentScene = idx;
-      playScene(idx);
-      clearInterval(sceneInterval);
-      sceneInterval = setInterval(() => {
-        currentScene = (currentScene + 1) % terminalScenes.length;
-        playScene(currentScene);
-      }, 8000);
+      currentShowcaseSlide = parseInt(dot.dataset.slide, 10);
+      renderShowcaseSlide(currentShowcaseSlide);
+      startShowcaseAutoplay();
     });
   });
 }
 
-function playScene(index) {
-  const scene = terminalScenes[index];
-  const body = document.getElementById('terminal-body');
-  const tabLabel = document.getElementById('terminal-tab-label');
-  const agentLabel = document.getElementById('terminal-agent-label');
-  const speedLabel = document.getElementById('terminal-speed');
+function startShowcaseAutoplay() {
+  clearInterval(showcaseInterval);
+  showcaseInterval = setInterval(() => {
+    currentShowcaseSlide = (currentShowcaseSlide + 1) % showcaseSlides.length;
+    renderShowcaseSlide(currentShowcaseSlide);
+  }, 5000);
+}
 
-  // Clear previous
-  sceneTimeouts.forEach(t => clearTimeout(t));
-  sceneTimeouts = [];
-  body.innerHTML = '';
+function renderShowcaseSlide(index) {
+  const slide = showcaseSlides[index];
 
-  // Update header/footer
-  if (tabLabel) tabLabel.querySelector('span').textContent = scene.tab;
-  if (agentLabel) agentLabel.textContent = scene.agent;
-  if (speedLabel) speedLabel.textContent = scene.speed;
-
-  // Update dots
-  document.querySelectorAll('.terminal-scene-dot').forEach((dot, i) => {
+  document.querySelectorAll('.app-showcase-slide').forEach((el, i) => {
+    el.classList.toggle('active', i === index);
+  });
+  document.querySelectorAll('.app-showcase-dot').forEach((dot, i) => {
     dot.classList.toggle('active', i === index);
   });
 
-  // Render lines with delays
-  scene.lines.forEach((line, i) => {
-    const t = setTimeout(() => {
-      const div = document.createElement('div');
-      div.className = 't-line';
-      div.style.animationDelay = '0s';
-      div.innerHTML = line.html || '&nbsp;';
-      body.appendChild(div);
-      // Auto-scroll to bottom
-      body.scrollTop = body.scrollHeight;
-    }, line.d);
-    sceneTimeouts.push(t);
-  });
+  const urlLink = document.getElementById('app-showcase-url');
+  const urlText = document.getElementById('app-showcase-url-text');
+  const swatch = document.getElementById('app-showcase-swatch');
+  const audience = document.getElementById('app-showcase-audience');
+  const nameText = document.getElementById('app-showcase-name-text');
+  const tag = document.getElementById('app-showcase-tag');
+
+  if (urlLink) urlLink.href = slide.link;
+  if (urlText) urlText.textContent = slide.url;
+  if (swatch) swatch.style.background = slide.color;
+  if (audience) audience.textContent = slide.audience;
+  if (nameText) nameText.textContent = slide.name;
+  if (tag) tag.textContent = slide.tag;
 }
+

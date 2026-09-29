@@ -161,53 +161,54 @@
           </div>
         </div>
 
-        <!-- RIGHT: Animated Terminal -->
+        <!-- RIGHT: App Showcase Carousel -->
         <div class="animate-fade-in-up delay-400">
-          <div class="hero-terminal">
-            <!-- Terminal Chrome -->
-            <div class="terminal-header">
+          <div class="app-showcase" id="app-showcase">
+            <!-- Browser Chrome -->
+            <div class="app-showcase-header">
               <div class="flex items-center gap-2">
                 <div class="w-3 h-3 rounded-full bg-red-400/80"></div>
                 <div class="w-3 h-3 rounded-full bg-yellow-400/80"></div>
                 <div class="w-3 h-3 rounded-full bg-green-400/80"></div>
               </div>
-              <div class="terminal-tab active" id="terminal-tab-label">
-                <i data-lucide="terminal" class="w-3.5 h-3.5"></i>
-                <span>ai-agent.ts</span>
-              </div>
-              <div class="flex items-center gap-2 text-gray-500">
-                <span class="text-xs font-mono" id="terminal-status">RUNNING</span>
+              <a href="https://www.classgini.com/" target="_blank" rel="noopener" class="app-showcase-url" id="app-showcase-url">
+                <i data-lucide="lock" class="w-3 h-3"></i>
+                <span id="app-showcase-url-text">classgini.com</span>
+                <i data-lucide="arrow-up-right" class="w-3 h-3 opacity-60"></i>
+              </a>
+              <div class="flex items-center gap-1.5 text-xs text-gray-500">
                 <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                LIVE
               </div>
             </div>
 
-            <!-- Terminal Body -->
-            <div class="terminal-body" id="terminal-body">
-              <!-- Content dynamically rendered by JS -->
+            <!-- Crossfading App Screenshots -->
+            <div class="app-showcase-body">
+              <div class="app-showcase-slide active" data-slide="0">
+                <img src="assets/showcase/classgini.svg" alt="ClassGini — AI School OS for education" loading="lazy">
+              </div>
+              <div class="app-showcase-slide" data-slide="1">
+                <img src="assets/showcase/quickcare.svg" alt="QuickCare — healthcare marketplace" loading="lazy">
+              </div>
+              <div class="app-showcase-slide" data-slide="2">
+                <img src="assets/showcase/lexorigin.svg" alt="Lex Origin — AI legal platform" loading="lazy">
+              </div>
             </div>
 
-            <!-- Terminal Footer -->
-            <div class="terminal-footer">
-              <div class="flex items-center gap-4 text-xs text-gray-500">
-                <span class="flex items-center gap-1">
-                  <i data-lucide="cpu" class="w-3 h-3 text-brand-400"></i>
-                  <span id="terminal-agent-label">AI Agent Active</span>
-                </span>
-                <span class="flex items-center gap-1">
-                  <i data-lucide="shield-check" class="w-3 h-3 text-green-400"></i>
-                  Secure
-                </span>
-                <span class="flex items-center gap-1">
-                  <i data-lucide="zap" class="w-3 h-3 text-yellow-400"></i>
-                  <span id="terminal-speed">42ms</span>
-                </span>
+            <!-- Caption + Nav Dots -->
+            <div class="app-showcase-footer">
+              <span class="app-showcase-swatch" id="app-showcase-swatch" style="background:#10b981"></span>
+              <div class="min-w-0">
+                <div class="app-showcase-audience" id="app-showcase-audience">For Schools, Colleges &amp; Coaching Centers</div>
+                <div class="app-showcase-name">
+                  <span id="app-showcase-name-text">ClassGini</span>
+                  <span class="app-showcase-tag" id="app-showcase-tag">AI School OS</span>
+                </div>
               </div>
-              <div class="flex items-center gap-1">
-                <div class="terminal-scene-dot active" data-scene="0"></div>
-                <div class="terminal-scene-dot" data-scene="1"></div>
-                <div class="terminal-scene-dot" data-scene="2"></div>
-                <div class="terminal-scene-dot" data-scene="3"></div>
-                <div class="terminal-scene-dot" data-scene="4"></div>
+              <div class="app-showcase-dots">
+                <button class="app-showcase-dot active" data-slide="0" aria-label="Show ClassGini"></button>
+                <button class="app-showcase-dot" data-slide="1" aria-label="Show QuickCare"></button>
+                <button class="app-showcase-dot" data-slide="2" aria-label="Show Lex Origin"></button>
               </div>
             </div>
           </div>
